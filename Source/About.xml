@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Fungi lite</name>
+  <packageId>Druid.Fungilite</packageId>
+  <author>Druidefuzi</author>
+  <supportedVersions>
+    <li>1.1</li>
+    <li>1.2</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>erdelf.HumanoidAlienRaces</packageId>
+      <displayName>Humanoid Alien Races</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+      <downloadUrl>https://github.com/erdelf/AlienRaces/wiki</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>erdelf.HumanoidAlienRaces</li>
+  </loadAfter>
+  <description>
+
+This is the Race "Fungi" from my mod Mushrooms and Shroomans.
+
+I´m currently redrawing everything in 512x512 and i thought that it would be a good idea to release only the race without their f´ed up stuff.
+Currently, they got 18 different faces. 
+
+
+Once enslaved , mistreated , torturted and cursed with a life expectancy of 15 years, after a violent escape, the Fungi simply slowly forgot their past over thousands of years. Now they are in a tribal stage , just trying to survive.
+Scientists claim that they are genetically altered humans. No one remembers what happened back then. At least in this region of the galaxy.
+
+
+Nearly all of them are night owls
+They dont mind being naked 
+They can not wear hats, due to their many different heads.
+They can only wear vanilla stuff, i had to forbid everything cause hats are not classified as hats and added all vanilla clothings after that.
+They eat from corpses too , they don´t mind eating humanoid meat (Only cooked, they are no animals :D)
+They like it hot , they have a hard time surviving cold habitats.
+The Fungi are often accompanied by their beloved shroomimals.
+Shroomimals can sting with their Tail , causing a flesh eating spore infection, which lets the victim endure high pain and they puke all the time. It´s a tendable Infection. If not treated, the victim will die fast.
+
+
+Obviously, you need Humanoid Alien Races 2.0, Big Credits to Erdelf for making other races possible.
+
+If you want to play that race , just pick the scenario : " Oh look! Shroomies! "</description>
+</ModMetaData>

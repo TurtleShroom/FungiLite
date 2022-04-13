@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DamageDef ParentName="Scratch">
+    <defName>FungiSting</defName>
+    <label>sting</label>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been stung to death.</deathMessage>
+    <additionalHediffs>
+      <li>
+        <hediff>Fungi_hediff_Spores</hediff>
+        <severityPerDamageDealt>0.022</severityPerDamageDealt>
+        <victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <hediffSolid>Crack</hediffSolid>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <stabChanceOfForcedInternal>0.8</stabChanceOfForcedInternal>
+    <overkillPctToDestroyPart>0.25~1.0</overkillPctToDestroyPart>
+  </DamageDef>
+</Defs>

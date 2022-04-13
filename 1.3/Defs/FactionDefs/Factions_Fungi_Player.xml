@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef Parent="FactionBase">
+    <defName>FungiPlayerTribe</defName>
+    <label>Fungi Tribe</label>
+    <description>Your own Fungaloids</description>
+    <isPlayer>true</isPlayer>
+    <pawnSingular>tribesperson</pawnSingular>
+    <pawnsPlural>tribespeople</pawnsPlural>
+    <basicMemberKind>PlayerFungi</basicMemberKind>
+    <techLevel>Neolithic</techLevel>
+    <backstoryCategories>
+      <li>Tribal</li>
+    </backstoryCategories>
+    <factionIconPath>World/FungiPlayerVillage</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <geneticVariance>1</geneticVariance>
+    <forageabilityFactor>1.9</forageabilityFactor>
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <allowedCultures>
+      <li>Corunan</li>
+    </allowedCultures>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <recipePrerequisiteTags>
+      <li>Tribal</li>
+    </recipePrerequisiteTags>
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+  </FactionDef>
+</Defs>

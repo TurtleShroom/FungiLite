@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef Abstract="True" Name="FungiFactionBase">
+  </FactionDef>
+  <FactionDef Parent="FungiFactionBase">
+    <defName>FungiPlayerTribe</defName>
+    <label>Fungi Tribe</label>
+    <description>Your own Fungaloids</description>
+    <isPlayer>true</isPlayer>
+    <pawnSingular>tribesperson</pawnSingular>
+    <pawnsPlural>tribespeople</pawnsPlural>
+    <basicMemberKind>PlayerFungi</basicMemberKind>
+    <techLevel>Neolithic</techLevel>
+    <backstoryCategories>
+      <li>Tribal</li>
+    </backstoryCategories>
+    <factionIconPath>World/FungiPlayerVillage</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+    <pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <geneticVariance>1</geneticVariance>
+    <forageabilityFactor>1.9</forageabilityFactor>
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <recipePrerequisiteTags>
+      <li>Tribal</li>
+    </recipePrerequisiteTags>
+  </FactionDef>
+</Defs>
