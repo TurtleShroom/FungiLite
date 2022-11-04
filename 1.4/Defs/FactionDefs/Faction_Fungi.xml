@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef Parent="FactionBase">
+    <defName>FungiFaction</defName>
+    <label>Fungi Tribe</label>
+    <description>Weird looking humans, they resemble mushrooms</description>
+    <pawnSingular>Fungi</pawnSingular>
+    <pawnsPlural>Fungis</pawnsPlural>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <factionIconPath>World/FungiVillage</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <techLevel>Neolithic</techLevel>
+    <backstoryCategories>
+      <li>Tribal</li>
+    </backstoryCategories>
+    <allowedCultures>
+      <li>Corunan</li>
+    </allowedCultures>
+    <leaderTitle>ancient</leaderTitle>
+    <caravanTraderKinds>
+      <li>Caravan_Neolithic_BulkGoods</li>
+      <li>Caravan_Neolithic_WarMerchant</li>
+      <li>Caravan_Neolithic_Slaver</li>
+      <li>Caravan_Neolithic_ShamanMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Fungi_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>50</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(800, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <FungiMelee>25</FungiMelee>
+          <FungiRanged>15</FungiRanged>
+          <FungiChief>5</FungiChief>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <FungiMelee>15</FungiMelee>
+          <FungiRanged>10</FungiRanged>
+          <FungiChief>3</FungiChief>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <FungiTrader>1</FungiTrader>
+        </traders>
+        <carriers>
+          <Muffalo>1</Muffalo>
+          <Dromedary>15</Dromedary>
+          <Alpaca>1</Alpaca>
+        </carriers>
+        <guards>
+          <FungiMelee>12</FungiMelee>
+          <FungiRanged>7</FungiRanged>
+          <Mercenary_Slasher>3</Mercenary_Slasher>
+          <Mercenary_Gunner>1</Mercenary_Gunner>
+          <Mercenary_Elite>1</Mercenary_Elite>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <FungiMelee>25</FungiMelee>
+          <FungiRanged>20</FungiRanged>
+          <FungiChief>12</FungiChief>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+  </FactionDef>
+</Defs>

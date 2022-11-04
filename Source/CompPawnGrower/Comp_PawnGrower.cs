@@ -86,10 +86,7 @@ public class Comp_PawnGrower : ThingComp
 
                 faction = spawnwild ? null : Faction.OfPlayer;
                 generationContext = PawnGenerationContext.NonPlayer;
-                var request = new PawnGenerationRequest(pawnKindDef, faction, generationContext, -1, true, true, false,
-                    false, true, true, 0f, false, true, true, true, false, false, false, false, 0f, 0f, null, 1f, null,
-                    null, null, null, null, Age, Age);
-                var pawn = PawnGenerator.GeneratePawn(request);
+                var pawn = PawnGenerator.GeneratePawn(pawnKindDef, faction);
                 if (pawnKindDef.RaceProps.Humanlike)
                 {
                     if (!spawnwild && Faction.OfPlayer.def.basicMemberKind != null)
