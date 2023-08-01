@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ScenarioDef>
-    <defName>Oh look! Shroomies!</defName>
-    <label>Oh look! Shroomies!</label>
-    <description>Just some shroomy looking humans trying to survive. They hate working during daytime. </description>
+    <defName>OhLook_Shroomies</defName>
+    <label>Went Our Separate Ways</label>
+    <description>"Oh look! Shroomies!" \n \n An ideological dispute among the Fungi Tribe was irreconcilable. Four Fungi, refusing to conform and mocked for their beliefs, left with their caps held high. Now, they are tired, hungry, and alone, with only each other. Will they prove right in their beliefs and thrive it heir own society? Will they break the chains of the old ways, which bind them? Will life find a way?</description>
     <scenario>
-      <summary>Fungals are searching food</summary>
+      <summary>Just some 'shroom-y looking humans trying to survive. They hate working during daytime.</summary>
       <playerFaction>
         <def>PlayerFaction</def>
         <factionDef>FungiPlayerTribe</factionDef>
@@ -18,51 +18,60 @@
         <li Class="ScenPart_PlayerPawnsArriveMethod">
           <def>PlayerPawnsArriveMethod</def>
         </li>
+		<!--
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Silver</thingDef>
           <count>200</count>
         </li>
+		-->
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>MedicineHerbal</thingDef>
           <count>24</count>
         </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>RawFungus</thingDef>
+          <count>1240</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Meat_Megaspider</thingDef>
+          <count>200</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Kibble</thingDef>
+          <count>800</count>
+        </li>
         <li Class="ScenPart_StartingAnimal">
           <def>StartingAnimal</def>
           <animalKind>Shroomimal</animalKind>
-          <count>2</count>
+          <count>4</count>
           <bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
         </li>
         <li Class="ScenPart_ScatterThingsNearPlayerStart">
           <def>ScatterThingsNearPlayerStart</def>
           <thingDef>WoodLog</thingDef>
-          <count>400</count>
+          <count>800</count>
         </li>
-        <li Class="ScenPart_ScatterThingsAnywhere">
-          <def>ScatterThingsAnywhere</def>
-          <thingDef>ShipChunk</thingDef>
-          <count>6</count>
-        </li>
+		<!--
         <li Class="ScenPart_ScatterThingsAnywhere">
           <def>ScatterThingsAnywhere</def>
           <thingDef>Steel</thingDef>
           <count>250</count>
         </li>
+		-->
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
-          <text>Hopefully this place will last more than just a few days.</text>
+          <text>Here we stand, torn apart, tribe broken in two, two, two! \n Different minds, a different path has started anew, new, new! \n Our thoughts were our own, won't change our mind! \n If we can't go on, survive and thrive, this we cry! \n \n Some day, life will find us, \n Break those chains that bind us! \n Our smiles will remind us! \n That we thrived when gone our separate ways! \n If they, start to haunt us, \n Our friends won't desert us! \n You know, our choice was just, \n For we thrived when gone our separate ways! \n \n \n \n Hopefully, this place will last more than just a few days.</text>
           <textKey>GameStartDialog</textKey>
           <closeSound>GameStartSting</closeSound>
         </li>
         <li Class="ScenPart_CreateIncident">
           <def>CreateIncident</def>
           <incident>ResourcePodCrash</incident>
-        </li>
-        <li Class="ScenPart_CreateIncident">
-          <def>CreateIncident</def>
-          <incident>ShipChunkDrop</incident>
-          <intervalDays>1</intervalDays>
         </li>
         <li Class="ScenPart_ForcedHediff">
           <def>ForcedHediff</def>
@@ -75,6 +84,16 @@
           <def>StartingResearch</def>
           <project>Stonecutting</project>
         </li>
+		<!--
+        <li Class="ScenPart_StartingResearch" MayRequire="biomesteam.biomescaverns">
+          <def MayRequire="biomesteam.biomescaverns">StartingResearch</def>
+          <project MayRequire="biomesteam.biomescaverns">BMT_ResearchMushrooms</project>
+        </li>
+        <li Class="ScenPart_StartingResearch" MayRequire="biomesteam.biomescaverns">
+          <def MayRequire="biomesteam.biomescaverns">StartingResearch</def>
+          <project MayRequire="biomesteam.biomescaverns">BMT_AdvancedFungi</project>
+        </li>
+		-->
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>MealSurvivalPack</thingDef>
@@ -88,12 +107,12 @@
         <li Class="ScenPart_StatFactor">
           <def>StatFactor</def>
           <stat>PlantWorkSpeed</stat>
-          <factor>1.15</factor>
+          <factor>1.1</factor>
         </li>
         <li Class="ScenPart_StatFactor">
           <def>StatFactor</def>
           <stat>PlantHarvestYield</stat>
-          <factor>1.2</factor>
+          <factor>1.02</factor>
         </li>
       </parts>
     </scenario>
