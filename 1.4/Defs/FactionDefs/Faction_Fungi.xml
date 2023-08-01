@@ -5,12 +5,12 @@
     <label>Fungi Tribe</label>
     <description>Weird looking humans, they resemble mushrooms</description>
     <pawnSingular>Fungi</pawnSingular>
-    <pawnsPlural>Fungis</pawnsPlural>
+    <pawnsPlural>Fungi</pawnsPlural>
     <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <canMakeRandomly>true</canMakeRandomly>
-    <canSiege>false</canSiege>
+    <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
     <factionIconPath>World/FungiVillage</factionIconPath>
     <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
@@ -23,6 +23,18 @@
     <allowedCultures>
       <li>Corunan</li>
     </allowedCultures>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Leather_Patch</li>
+		<li>DevilstrandCloth</li>
+		<li MayRequire="biomesteam.biomescaverns">BMT_Leather_Mushroom</li>
+		<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Mycothread</li>
+		<li MayRequire="error277.tunneler.expanded">shroomfiber_raw</li>
+		<li MayRequire="error277.tunneler.expanded">shroomfiber</li>
+		<li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+		<li MayRequire="mlie.ancientrimcore">AR_Bronze</li>
+      </thingDefs>
+    </apparelStuffFilter>
     <leaderTitle>ancient</leaderTitle>
     <caravanTraderKinds>
       <li>Caravan_Neolithic_BulkGoods</li>
@@ -81,9 +93,11 @@
         <guards>
           <FungiMelee>12</FungiMelee>
           <FungiRanged>7</FungiRanged>
+		  <!--
           <Mercenary_Slasher>3</Mercenary_Slasher>
           <Mercenary_Gunner>1</Mercenary_Gunner>
           <Mercenary_Elite>1</Mercenary_Elite>
+		  -->
         </guards>
       </li>
       <li>
@@ -104,5 +118,11 @@
         <li>(4000, 1000)</li>
       </points>
     </raidLootValueFromPointsCurve>
+	<modExtensions>
+		<li Class="VFEEmpire.FactionExtension_Deserters" MayRequire="oskarpotocki.vfe.empire">
+			<canSendDeserters MayRequire="oskarpotocki.vfe.empire">true</canSendDeserters>
+			<deserterKind MayRequire="oskarpotocki.vfe.empire">VFEE_Deserter</deserterKind>
+		</li>
+	</modExtensions>
   </FactionDef>
 </Defs>

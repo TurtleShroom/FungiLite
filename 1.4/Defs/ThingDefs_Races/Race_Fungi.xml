@@ -32,7 +32,8 @@
             </goodwill>
           </li>
         </factionRelations>
-        <maxDamageForSocialfight>5</maxDamageForSocialfight>
+        <maxDamageForSocialfight>1</maxDamageForSocialfight>
+		<humanRecipeImport>true</humanRecipeImport>
         <alienPartGenerator>
           <headTypes Inherit="False">
             <li>Female_Evfu_Normal</li>
@@ -127,21 +128,55 @@
       </styleSettings>
       <thoughtSettings>
         <cannotReceiveThoughts>
-          <li>ObservedLayingCorpse</li>
-          <li>EnvironmentDark</li>
-          <li>NeedOutdoors</li>
-          <li>AteCorpse</li>
-          <li>AteHumanlikeMeatDirect</li>
-          <li>AteHumanlikeMeatAsIngredient</li>
-          <li>AteHumanlikeMeatAsIngredientCannibal</li>
-          <li>KnowPrisonerSold</li>
-          <li>KnowGuestOrganHarvested</li>
-          <li>KnowButcheredHumanlikeCorpse</li>
-          <li>ButcheredHumanlikeCorpse</li>
-          <li>WitnessedDeathNonAlly</li>
-          <li>PrisonerBanishedToDie</li>
-          <li>Naked</li>
-          <li>ButcheredHumanlikeCorpseOpinion</li>
+			<li>ObservedLayingCorpse</li>
+			<li>EnvironmentDark</li>
+			<li>NeedOutdoors</li>
+			<li>AteCorpse</li>
+			<li>AteKibble</li>
+			<li>AteHumanlikeMeatDirect</li>
+			<li>AteHumanlikeMeatAsIngredient</li>
+			<li>KnowPrisonerSold</li>
+			<li>KnowGuestOrganHarvested</li>
+			<li>KnowButcheredHumanlikeCorpse</li>
+			<li>ButcheredHumanlikeCorpse</li>
+			<li>ButcheredHumanlikeCorpseOpinion</li>
+			<li>WitnessedDeathNonAlly</li>
+			<li>PrisonerBanishedToDie</li>
+			<li>Naked</li>
+			<li>ApparelDamaged</li>
+			<li>DeadMansApparel</li>
+			<li MayRequire="ludeon.rimworld.ideology">AteFungus_Despised</li>
+			<li MayRequire="ludeon.rimworld.ideology">AteFungusAsIngredient_Despised</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartCovered_Disapproved_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartCovered_Disapproved_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartCovered_Disapproved_Memory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartCovered_Disapproved_Social_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartCovered_Disapproved_Social_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartButGroinCovered_Disapproved_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartButGroinCovered_Disapproved_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartButGroinCovered_Disapproved_Memory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartButGroinCovered_Disapproved_Social_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartButGroinCovered_Disapproved_Social_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Social_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Social_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Social_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Social_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestOrHairUncovered_Disapproved_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestOrHairUncovered_Disapproved_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestHairOrFaceUncovered_Disapproved_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestHairOrFaceUncovered_Disapproved_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestHairOrFaceUncovered_Disapproved_Social_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestHairOrFaceUncovered_Disapproved_Social_Female</li>
+			
+			<!-- Fungi sow their children, so they don't have a taboo against Growth Vats, even if the Faction they are in does. -->
+			<li MayRequire="ludeon.rimworld.biotech">GrowthVat_Prohibited_GrowthVatInColony</li>
+			<li MayRequire="ludeon.rimworld.biotech">GrowthVat_Prohibited_ChildInGrowthVat</li>
         </cannotReceiveThoughts>
       </thoughtSettings>
       <relationSettings>
@@ -154,18 +189,18 @@
           </li>
           <li>
             <relation>Child</relation>
-            <label>Child</label>
-            <femaleLabel>Child</femaleLabel>
+            <label>Spore</label>
+            <femaleLabel>Spore</femaleLabel>
           </li>
           <li>
             <relation>Spouse</relation>
-            <label>Spouse</label>
-            <femaleLabel>Spouse</femaleLabel>
+            <label>Bonded</label>
+            <femaleLabel>Bonded</femaleLabel>
           </li>
           <li>
             <relation>ExSpouse</relation>
-            <label>ExSpouse</label>
-            <femaleLabel>ExSpouse</femaleLabel>
+            <label>Ex-Spouse</label>
+            <femaleLabel>Ex-Spouse</femaleLabel>
           </li>
           <li>
             <relation>Sibling</relation>
@@ -174,8 +209,8 @@
           </li>
           <li>
             <relation>Fiance</relation>
-            <label>Betrothed</label>
-            <femaleLabel>Betrothed</femaleLabel>
+            <label>Bonded</label>
+            <femaleLabel>Bonded</femaleLabel>
           </li>
         </renamer>
       </relationSettings>
@@ -185,7 +220,7 @@
           <li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
           <li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
         </blackGeneList>
-        <blackGeneTags>
+        <blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
           <li>SkinColor</li>
           <li>HairColor</li>
           <li>EyeColor</li>
@@ -199,9 +234,9 @@
           <li>BeardStyle</li>
           <li>SkinColorOverride</li>
           <li>Fur</li>
-          <li>Tail</li>
+          <!-- <li>Tail</li> -->
         </blackGeneTags>
-        <blackEndoCategories>
+        <blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
           <li>Melanin</li>
           <li>HairColor</li>
           <li>Ears</li>
@@ -218,11 +253,12 @@
       <Flammability>0.8</Flammability>
       <ComfyTemperatureMin>18</ComfyTemperatureMin>
       <ComfyTemperatureMax>45</ComfyTemperatureMax>
-      <LeatherAmount>25</LeatherAmount>
+	  <MeatAmount>90</MeatAmount>
+      <LeatherAmount>35</LeatherAmount>
       <PsychicSensitivity>0.25</PsychicSensitivity>
-      <PlantWorkSpeed>0.9</PlantWorkSpeed>
+      <PlantWorkSpeed>1.1</PlantWorkSpeed>
       <ResearchSpeed>1.2</ResearchSpeed>
-      <Mass>50</Mass>
+      <Mass>30</Mass>
     </statBases>
     <tools>
       <li>
@@ -293,8 +329,10 @@
       <body>FungiBody</body>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1.25</baseHealthScale>
-      <foodType>CarnivoreAnimal</foodType>
+      <foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Meat, Fungus, Meal, Processed, Fluid, Liquor, Kibble</foodType>
       <gestationPeriodDays>45</gestationPeriodDays>
+	  <specificMeatDef>TSP_FungiFungus</specificMeatDef>
+	  <leatherDef>RawFungus</leatherDef>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
@@ -353,6 +391,11 @@
         <li>Human</li>
       </hediffGiverSets>
     </race>
+    <ingredient>
+		<mergeCompatibilityTags>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+		</mergeCompatibilityTags>
+    </ingredient>
     <recipes>
       <li>InstallArchotechEye</li>
       <li>InstallArchotechArm</li>
@@ -384,7 +427,14 @@
       <li>Euthanize</li>
       <li>Anesthetize</li>
     </recipes>
+		<modExtensions>
+			<li Class="NocturnalAnimals.ExtendedRaceProperties" MayRequire="Mlie.XNDNocturnalAnimals">
+				<bodyClock MayRequire="Mlie.XNDNocturnalAnimals">Nocturnal</bodyClock>
+			</li>
+		</modExtensions>
   </AlienRace.ThingDef_AlienRace>
+  
+  
   <AlienRace.RaceSettings>
     <defName>FungiRaceSettings</defName>
     <pawnKindSettings>
@@ -395,11 +445,25 @@
               <kindDefs>
                 <li>PlayerFungi</li>
               </kindDefs>
-              <chance>7.0</chance>
+              <chance>10.0</chance>
             </li>
           </pawnKindEntries>
           <factionDefs>
             <li>PlayerTribe</li>
+			<li>FungiPlayerTribe</li>
+          </factionDefs>
+        </li>
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>PlayerFungi</li>
+              </kindDefs>
+              <chance>4.5</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>PlayerColony</li>
           </factionDefs>
         </li>
       </startingColonists>
@@ -408,7 +472,7 @@
           <kindDefs>
             <li>PlayerFungi</li>
           </kindDefs>
-          <chance>12.0</chance>
+          <chance>15.0</chance>
         </li>
       </alienslavekinds>
       <alienrefugeekinds>

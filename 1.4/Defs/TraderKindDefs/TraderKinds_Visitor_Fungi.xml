@@ -16,9 +16,10 @@
           <li>FungiTrade_Shroomimal</li>
         </tradeTagsSell>
         <tradeTagsBuy>
-          <li>AnimalUncommon</li>
-          <li>AnimalExotic</li>
-          <li>FungiTrade_Shroomimal</li>
+			<li>AnimalCommon</li>
+			<li>AnimalUncommon</li>
+			<li>AnimalExotic</li>
+			<li>FungiTrade_Shroomimal</li>
         </tradeTagsBuy>
         <kindCountRange>1~3</kindCountRange>
         <countRange>1~4</countRange>
@@ -51,7 +52,7 @@
       </li>
       <li Class="StockGenerator_Category">
         <categoryDef>Drugs</categoryDef>
-        <maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
+        <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
         <thingDefCountRange>
           <min>-1</min>
           <max>2</max>

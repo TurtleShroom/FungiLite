@@ -8,9 +8,9 @@
     </backstoryCategories>
     <chemicalAddictionChance>0.02</chemicalAddictionChance>
     <initialWillRange>1~3</initialWillRange>
-    <initialResistanceRange>15~24</initialResistanceRange>
+    <initialResistanceRange>3~6</initialResistanceRange>
     <invNutrition>2.3</invNutrition>
-    <invFoodDef>RawAgave</invFoodDef>
+    <invFoodDef>RawFungus</invFoodDef>
     <apparelTags>
       <li>Tribal</li>
     </apparelTags>
@@ -42,6 +42,8 @@
     <weaponTags>
       <li>NeolithicMeleeDecent</li>
       <li>NeolithicMeleeAdvanced</li>
+	  <li>Spear</li>
+	  <li>SpearMen</li>
     </weaponTags>
   </PawnKindDef>
   <PawnKindDef Parentname="FungiMelee">

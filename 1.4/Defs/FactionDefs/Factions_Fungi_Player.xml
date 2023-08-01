@@ -5,8 +5,8 @@
     <label>Fungi Tribe</label>
     <description>Your own Fungaloids</description>
     <isPlayer>true</isPlayer>
-    <pawnSingular>tribesperson</pawnSingular>
-    <pawnsPlural>tribespeople</pawnsPlural>
+    <pawnSingular>fungal tribesmman</pawnSingular>
+    <pawnsPlural>fungal tribesmen</pawnsPlural>
     <basicMemberKind>PlayerFungi</basicMemberKind>
     <techLevel>Neolithic</techLevel>
     <backstoryCategories>
@@ -26,12 +26,21 @@
     </allowedCultures>
     <apparelStuffFilter>
       <thingDefs>
-        <li>Cloth</li>
+        <li>Leather_Patch</li>
+		<li>DevilstrandCloth</li>
+		<li MayRequire="biomesteam.biomescaverns">BMT_Leather_Mushroom</li>
+		<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Mycothread</li>
+		<li MayRequire="error277.tunneler.expanded">shroomfiber_raw</li>
+		<li MayRequire="error277.tunneler.expanded">shroomfiber</li>
+		<li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+		<li MayRequire="mlie.ancientrimcore">AR_Bronze</li>
       </thingDefs>
     </apparelStuffFilter>
+	<!--
     <recipePrerequisiteTags>
       <li>Tribal</li>
     </recipePrerequisiteTags>
+	-->
     <raidLootValueFromPointsCurve>
       <points>
         <li>(35,     15)</li>

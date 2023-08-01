@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>TSP_FungiFungus</defName>
+		<label>Fungi meat</label>
+		<description>The "meat" of a Fungi is a strange substance coated in substances similar to a mushroom's fruiting body and fibers, making it closer to fungi than flesh. Herbivorous animals can and will eat it, as it can be digested by them, and likewise, any creature that can eat fungi will eat it. Fungi meat is more nutritious than many foods and takes a very, very long time to rot. For those that enjoy eating fungi, it is remarkaly delicious. \n \n Due to the fact that Fungi are sapient beings and descended from men, eating their flesh is abhorrent for some, but "fascinating" for those already willing to eat their own kind. \n However, cooking Fungi meat removes the distinction between it and ordinary fungi, making it safe for non-Fungi to eat it without anguish.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Human</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(189,189,189)</color>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+			<Mass>0.009</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>.1</Flammability>
+			<Nutrition>0.06</Nutrition>
+			<FoodPoisonChance>0.01</FoodPoisonChance>
+			<DeteriorationRate>0.01</DeteriorationRate>
+		</statBases>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<foodType>Fungus, VegetableOrFruit, VegetarianAnimal, VegetarianRoughAnimal, Kibble</foodType>
+			<optimalityOffsetHumanlikes>-25</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>20</optimalityOffsetFeedingAnimals>
+			<!-- <tasteThought>AteHumanlikeMeatDirect</tasteThought> -->
+			<specialThoughtDirect>AteHumanlikeMeatDirect</specialThoughtDirect>
+			<specialThoughtAsIngredient Inherit="False"></specialThoughtAsIngredient>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>25</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<thingCategories>
+			<li>PlantFoodRaw</li>
+		</thingCategories>
+	</ThingDef>
+</Defs>
