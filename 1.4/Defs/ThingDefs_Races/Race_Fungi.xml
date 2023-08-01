@@ -259,6 +259,9 @@
       <PlantWorkSpeed>1.1</PlantWorkSpeed>
       <ResearchSpeed>1.2</ResearchSpeed>
       <Mass>30</Mass>
+	  <ImmunityGainSpeed>1.1</ImmunityGainSpeed>
+	  <RoyalFavorValue MayRequire="ludeon.rimworld.royalty">3</RoyalFavorValue>
+	  <Fertility MayRequire="Ludeon.Rimworld.Biotech">0</Fertility>
     </statBases>
     <tools>
       <li>
@@ -343,7 +346,7 @@
       </litterSizeCurve>
       <lifeStageAges>
         <li>
-          <def>FungiSporlingStage</def>
+          <def>FungiSporelingStage</def>
           <minAge>0</minAge>
         </li>
         <li>
@@ -360,13 +363,36 @@
         </li>
         <li>
           <def>FungiElderStage</def>
-          <minAge>4</minAge>
+          <minAge>13</minAge>
         </li>
         <li>
           <def>FungiAncientStage</def>
-          <minAge>6</minAge>
+          <minAge>15</minAge>
         </li>
       </lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.Rimworld.Biotech">
+				<Firefighter>3</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>4</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.Rimworld.Biotech">0</Childcare>
+				<BasicWorker>0</BasicWorker>
+				<Warden>1</Warden>
+				<Handling>0</Handling>
+				<Cooking>0</Cooking>
+				<Hunting>0</Hunting>
+				<Construction>1</Construction>
+				<Growing>0</Growing>
+				<Mining>2</Mining>
+				<PlantCutting>0</PlantCutting>
+				<Smithing>0</Smithing>
+				<Tailoring>0</Tailoring>
+				<Art>1</Art>
+				<Crafting>0</Crafting>
+				<Hauling>1</Hauling>
+				<Cleaning>0</Cleaning>
+				<Research>4</Research>
+			</lifeStageWorkSettings>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
@@ -374,16 +400,31 @@
         <volume>(0.3, 0.8, 0.4)</volume>
         <offset>(0,0,-0.3)</offset>
       </specialShadowData>
-      <ageGenerationCurve>
+      <ageGenerationCurve Inherit="False">
         <points>
-          <li>(0.7,0)</li>
-          <li>(2,50)</li>
-          <li>(2.1,100)</li>
-          <li>(2.2,70)</li>
-          <li>(3,18)</li>
-          <li>(3.5,10)</li>
-          <li>(4,3)</li>
-          <li>(4.5,0)</li>
+			<li>(0,0)</li>
+			<li>(0.7,0)</li>
+			<li>(2,50)</li>
+			<li>(2.1,0)</li>
+			<li>(2.2,0)</li>
+			<li>(3,0)</li>
+			<li>(3.5,0)</li>
+			<li>(4,0.1)</li>
+			<li>(5,0.4)</li>
+			<li>(6,0.5)</li>
+			<li>(8,11)</li>
+			<li>(9,20)</li>
+			<li>(10,22)</li>
+			<li>(11,3.1)</li>
+			<li>(12,1)</li>
+			<li>(13,1)</li>
+			<li>(14,1)</li>
+			<li>(15,0)</li>
+			<li>(16,0)</li>
+			<li>(20,0)</li>
+			<li>(50,0)</li>
+			<li>(75,0)</li>
+			<li>(100,0)</li>
         </points>
       </ageGenerationCurve>
       <hediffGiverSets>
