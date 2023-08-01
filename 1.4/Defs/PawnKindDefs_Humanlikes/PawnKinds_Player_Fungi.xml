@@ -8,8 +8,9 @@
     <isFighter>false</isFighter>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
-    <minGenerationAge>2</minGenerationAge>
-    <maxGenerationAge>10</maxGenerationAge>
+    <minGenerationAge>9</minGenerationAge>
+    <maxGenerationAge>12</maxGenerationAge>
+	<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
   </PawnKindDef>
   <PawnKindDef ParentName="BasePlayerFungiPawnKind">
     <defName>PlayerFungi</defName>

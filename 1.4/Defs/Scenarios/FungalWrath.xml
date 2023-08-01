@@ -65,7 +65,7 @@
 		-->
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
-          <text>Here we stand, torn apart, tribe broken in two, two, two! \n Different minds, a different path has started anew, new, new! \n Our thoughts were our own, won't change our mind! \n If we can't go on, survive and thrive, this we cry! \n \n Some day, life will find us, \n Break those chains that bind us! \n Our smiles will remind us! \n That we thrived when gone our separate ways! \n If they, start to haunt us, \n Our friends won't desert us! \n You know, our choice was just, \n For we thrived when gone our separate ways! \n \n \n \n Hopefully, this place will last more than just a few days.</text>
+          <text>Here we stand, torn apart, tribe broken in two, two, two! \n Different minds, a different path has started anew, new, new! \n Our thoughts were our own, won't change our mind! \n If we can't go on, survive and thrive, this we cry! \n \n Some day, life will find us, \n Break those chains that bind us! \n Our smiles, will remind us, \n That we thrived when gone our separate ways! \n If they, start to haunt us, \n Our friends won't desert us! \n You know, our choice was just, \n For we thrived when gone our separate ways! \n \n \n \n Hopefully, this place will last more than just a few days.</text>
           <textKey>GameStartDialog</textKey>
           <closeSound>GameStartSting</closeSound>
         </li>

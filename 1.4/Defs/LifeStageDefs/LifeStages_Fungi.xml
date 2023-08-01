@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <LifeStageDef>
-    <defName>FungiSporlingStage</defName>
+    <defName>FungiSporelingStage</defName>
     <label>sporeling</label>
     <bodySizeFactor>0.2</bodySizeFactor>
     <healthScaleFactor>0.2</healthScaleFactor>

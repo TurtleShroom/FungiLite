@@ -32,6 +32,7 @@
 			<li>Ground</li>
 			<li>Hydroponic</li>
 			<li>BMT_Fungiponics</li>
+			<li>VPE_Mushroom</li>
 		</sowTags>
 		<growMinGlow>0</growMinGlow>
 		<growOptimalGlow>0.55</growOptimalGlow>
@@ -47,7 +48,7 @@
       <li Class="CompPawnGrower.CompProperties_PawnGrower">
         <canspawn>true</canspawn>
         <spawnwild>false</spawnwild>
-        <spawnChance>0.9</spawnChance>
+        <spawnChance>1</spawnChance>
         <Races>
           <Alien_Fungi>8</Alien_Fungi>
         </Races>
