@@ -2,10 +2,10 @@
 <Defs>
   <ScenarioDef>
     <defName>OhLook_Shroomies</defName>
-    <label>Went Our Separate Ways</label>
+    <label>Separate Ways</label>
     <description>"Oh look! Shroomies!" \n \n An ideological dispute among the Fungi Tribe was irreconcilable. Four Fungi, refusing to conform and mocked for their beliefs, left with their caps held high. Now, they are tired, hungry, and alone, with only each other. Will they prove right in their beliefs and thrive it heir own society? Will they break the chains of the old ways, which bind them? Will life find a way?</description>
     <scenario>
-      <summary>Just some 'shroom-y looking humans trying to survive. They hate working during daytime.</summary>
+      <summary>Just some mushroom-looking humans trying to survive. They hate working during daytime.</summary>
       <playerFaction>
         <def>PlayerFaction</def>
         <factionDef>FungiPlayerTribe</factionDef>

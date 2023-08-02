@@ -7,6 +7,7 @@
     <healthScaleFactor>0.2</healthScaleFactor>
     <hungerRateFactor>0.2</hungerRateFactor>
     <marketValueFactor>0.5</marketValueFactor>
+	<reproductive>false</reproductive>
     <statFactors>
       <MoveSpeed>1</MoveSpeed>
     </statFactors>
@@ -18,6 +19,7 @@
     <healthScaleFactor>0.5</healthScaleFactor>
     <hungerRateFactor>0.5</hungerRateFactor>
     <marketValueFactor>0.9</marketValueFactor>
+	<reproductive>false</reproductive>
     <statFactors>
       <MoveSpeed>1</MoveSpeed>
     </statFactors>
@@ -28,7 +30,7 @@
     <bodySizeFactor>0.8</bodySizeFactor>
     <hungerRateFactor>0.8</hungerRateFactor>
     <visible>false</visible>
-    <reproductive>true</reproductive>
+    <reproductive>false</reproductive>
   </LifeStageDef>
   <LifeStageDef>
     <defName>FungiAdultStage</defName>
