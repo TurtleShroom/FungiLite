@@ -8,6 +8,8 @@
     <hungerRateFactor>0.2</hungerRateFactor>
     <marketValueFactor>0.5</marketValueFactor>
 	<reproductive>false</reproductive>
+	<!-- <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass> -->
+	<!-- <developmentalStage>Child</developmentalStage> -->
     <statFactors>
       <MoveSpeed>1</MoveSpeed>
     </statFactors>
@@ -20,6 +22,7 @@
     <hungerRateFactor>0.5</hungerRateFactor>
     <marketValueFactor>0.9</marketValueFactor>
 	<reproductive>false</reproductive>
+	<!-- <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass> -->
     <statFactors>
       <MoveSpeed>1</MoveSpeed>
     </statFactors>
@@ -31,6 +34,7 @@
     <hungerRateFactor>0.8</hungerRateFactor>
     <visible>false</visible>
     <reproductive>false</reproductive>
+	<!-- <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass> -->
   </LifeStageDef>
   <LifeStageDef>
     <defName>FungiAdultStage</defName>
@@ -38,6 +42,7 @@
     <label>adult</label>
     <visible>false</visible>
     <reproductive>false</reproductive>
+	<!-- <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass> -->
   </LifeStageDef>
   <LifeStageDef>
     <defName>FungiElderStage</defName>
@@ -48,6 +53,7 @@
     <label>elder</label>
     <visible>true</visible>
     <reproductive>false</reproductive>
+	<!-- <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass> -->
     <statFactors>
       <MoveSpeed>1.1</MoveSpeed>
     </statFactors>
@@ -61,6 +67,7 @@
     <label>ancient</label>
     <visible>true</visible>
     <reproductive>false</reproductive>
+	<!-- <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass> -->
     <statFactors>
       <MoveSpeed>1.2</MoveSpeed>
     </statFactors>

@@ -58,9 +58,11 @@
     </comps>
     <race>
       <body>QuadrupedAnimalWithPawsAndTailFungi</body>
+	  <predator>true</predator>
+	  <maxPreyBodySize>2</maxPreyBodySize>
       <herdAnimal>false</herdAnimal>
       <baseBodySize>0.9</baseBodySize>
-      <baseHungerRate>0.9</baseHungerRate>
+      <baseHungerRate>0.8</baseHungerRate>
       <baseHealthScale>1.25</baseHealthScale>
       <foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Corpse, Meat, Fungus, Fluid, Kibble</foodType>
       <leatherDef>RawFungus</leatherDef>
@@ -71,6 +73,7 @@
       <packAnimal>false</packAnimal>
       <gestationPeriodDays>2</gestationPeriodDays>
       <lifeExpectancy>3</lifeExpectancy>
+	  <canBePredatorPrey>false</canBePredatorPrey>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -135,7 +138,7 @@
 
 				<AB_MechanoidIntrusion MayRequire="sarg.alphabiomes">0.01</AB_MechanoidIntrusion>
 
-				<AB_MycoticJungle MayRequire="sarg.alphabiomes">0.5</AB_MycoticJungle>
+				<AB_MycoticJungle MayRequire="sarg.alphabiomes">1</AB_MycoticJungle>
 
 				<AB_OcularForest MayRequire="sarg.alphabiomes">0.01</AB_OcularForest>
 
@@ -264,7 +267,7 @@
 				
 				<BMT_EarthenDepths MayRequire="BiomesTeam.BiomesCaverns">0</BMT_EarthenDepths>
 				
-				<BMT_FungalForest MayRequire="BiomesTeam.BiomesCaverns">0.5</BMT_FungalForest>
+				<BMT_FungalForest MayRequire="BiomesTeam.BiomesCaverns">1</BMT_FungalForest>
 				
 
 
