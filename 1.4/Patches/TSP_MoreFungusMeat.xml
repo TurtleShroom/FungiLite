@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/race/useMeatFrom</xpath>
+			<value>
+				<specificMeatDef>TSP_FungiFungus</specificMeatDef>
+				<leatherDef>RawFungus</leatherDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/statBases/MeatAmount</xpath>
+			<value>
+				<MeatAmount>100</MeatAmount>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>
