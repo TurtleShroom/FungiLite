@@ -347,6 +347,7 @@
         </points>
       </litterSizeCurve>
       <lifeStageAges Inherit="False">
+		<!--
         <li>
           <def>FungiSporelingStage</def>
           <minAge>0</minAge>
@@ -371,6 +372,11 @@
           <def>FungiAncientStage</def>
           <minAge>16</minAge>
         </li>
+		-->
+		<li>
+			<def>MechanoidFullyFormed</def>
+			<minAge>0</minAge>
+		</li>
       </lifeStageAges>
 			<lifeStageWorkSettings MayRequire="Ludeon.Rimworld.Biotech">
 				<Firefighter>3</Firefighter>
