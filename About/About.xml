@@ -25,7 +25,6 @@
 		<li>BiomesTeam.BiomesCore</li>
 		<li>BiomesTeam.BiomesCaverns</li>
 		<li>m00nl1ght.GeologicalLandforms</li>
-		<li>tsp.mudkid.thrumbojosh.brah</li>
 		<li>vanillaexpanded.vplantsemushrooms</li>
 		<li>spoonshortage.nokumushrooms</li>
 		<li>fluffysminion.itw.caveworldfloraunleashed</li>
@@ -40,6 +39,7 @@
 	<loadBefore>
 		<li>TSP.UniformMushrooms</li>
 		<li>tsp.isengriff.storytime</li>
+		<li>tsp.mudkid.thrumbojosh.brah</li>
 	</loadBefore>
   <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of Druidefuzis mod
