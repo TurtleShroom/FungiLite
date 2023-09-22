@@ -248,7 +248,7 @@
       </raceRestriction>
     </alienRace>
     <statBases>
-      <MarketValue>1500</MarketValue>
+      <MarketValue>1000</MarketValue>
       <MoveSpeed>3.5</MoveSpeed>
       <Flammability>0.8</Flammability>
       <ComfyTemperatureMin>18</ComfyTemperatureMin>
@@ -260,10 +260,10 @@
       <ResearchSpeed>1.2</ResearchSpeed>
       <Mass>30</Mass>
 	  <HSAU_GhoulismSusceptibility MayRequire="baskerville.hellsingarmsultimate">0.2</HSAU_GhoulismSusceptibility>
-	  <HSAU_SanctusSensitivity MayRequire="baskerville.hellsingarmsultimate" Inherit="False">0.1</HSAU_SanctusSensitivity>
+	  <HSAU_SanctusSensitivity MayRequire="baskerville.hellsingarmsultimate" Inherit="False">0.03</HSAU_SanctusSensitivity>
 	  <ImmunityGainSpeed>1.1</ImmunityGainSpeed>
 	  <RoyalFavorValue MayRequire="ludeon.rimworld.royalty">3</RoyalFavorValue>
-	  <Fertility MayRequire="Ludeon.Rimworld.Biotech">0</Fertility>
+	  <!-- <Fertility MayRequire="Ludeon.Rimworld.Biotech">0</Fertility> -->
     </statBases>
     <tools>
       <li>

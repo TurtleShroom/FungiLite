@@ -3,7 +3,7 @@
   <FactionDef Parent="FactionBase">
     <defName>FungiFaction</defName>
     <label>Fungi Tribe</label>
-    <description>Weird looking humans, they resemble mushrooms</description>
+    <description>Weird looking humans that resemble mushrooms!</description>
     <pawnSingular>Fungi</pawnSingular>
     <pawnsPlural>Fungi</pawnsPlural>
     <settlementGenerationWeight>1</settlementGenerationWeight>
