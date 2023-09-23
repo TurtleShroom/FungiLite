@@ -263,7 +263,7 @@
 	  <HSAU_SanctusSensitivity MayRequire="baskerville.hellsingarmsultimate" Inherit="False">0.03</HSAU_SanctusSensitivity>
 	  <ImmunityGainSpeed>1.1</ImmunityGainSpeed>
 	  <RoyalFavorValue MayRequire="ludeon.rimworld.royalty">3</RoyalFavorValue>
-	  <!-- <Fertility MayRequire="Ludeon.Rimworld.Biotech">0</Fertility> -->
+	  <Fertility MayRequire="Ludeon.Rimworld.Biotech">0</Fertility>
     </statBases>
     <tools>
       <li>
@@ -347,7 +347,6 @@
         </points>
       </litterSizeCurve>
       <lifeStageAges Inherit="False">
-		<!--
         <li>
           <def>FungiSporelingStage</def>
           <minAge>0</minAge>
@@ -372,11 +371,6 @@
           <def>FungiAncientStage</def>
           <minAge>16</minAge>
         </li>
-		-->
-		<li>
-			<def>MechanoidFullyFormed</def>
-			<minAge>0</minAge>
-		</li>
       </lifeStageAges>
 			<lifeStageWorkSettings MayRequire="Ludeon.Rimworld.Biotech">
 				<Firefighter>3</Firefighter>
@@ -479,6 +473,9 @@
 		<modExtensions>
 			<li Class="NocturnalAnimals.ExtendedRaceProperties" MayRequire="Mlie.XNDNocturnalAnimals">
 				<bodyClock MayRequire="Mlie.XNDNocturnalAnimals">Nocturnal</bodyClock>
+			</li>
+			<li Class="MorrowRim.ExtendedRaceProperties" MayRequire="SirMashedPotato.MorrowRim">
+				<ashResistant MayRequire="SirMashedPotato.MorrowRim">Resistant</ashResistant>
 			</li>
 		</modExtensions>
   </AlienRace.ThingDef_AlienRace>
