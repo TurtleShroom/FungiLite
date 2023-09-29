@@ -12,8 +12,8 @@
 				<PawnKindDef ParentName="VFEE_DeserterBase">
 					<defName>TSP_VFEE_TraitorFungusAmongUs</defName>
 					<race Inherit="False">Alien_Fungi</race>
-					<label>deserters' Fungi hitman</label>
-					<labelPlural>deserters' Fungi hitmen</labelPlural>
+					<label>Fungi hitman</label>
+					<labelPlural>Fungi hitmen</labelPlural>
 					<combatPower>100</combatPower>
 					<chemicalAddictionChance>0.15</chemicalAddictionChance>
 					<combatEnhancingDrugsChance>0.75</combatEnhancingDrugsChance>
@@ -22,7 +22,8 @@
 						<li>Lance</li>
 						<li>SpearMen</li>
 						<li>MedievalMeleeDecent</li>
-						<li>Gun</li>
+						<li>SimpleGun</li>
+						<li>Revolver</li>
 						<li>WoodBeet</li>
 					</weaponTags>
 					<apparelTags>
