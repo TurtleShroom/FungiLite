@@ -5,11 +5,12 @@
     <race>Alien_Fungi</race>
     <backstoryCategories>
       <li>Tribal</li>
+	  <li MayRequire="zal.folia">DeathkapFactionBackstories</li>
     </backstoryCategories>
     <chemicalAddictionChance>0.02</chemicalAddictionChance>
     <initialWillRange>1~3</initialWillRange>
     <initialResistanceRange>2~6</initialResistanceRange>
-    <invNutrition>2.3</invNutrition>
+    <invNutrition>3</invNutrition>
     <invFoodDef>RawFungus</invFoodDef>
     <minGenerationAge>9</minGenerationAge>
     <maxGenerationAge>12</maxGenerationAge>
@@ -18,6 +19,9 @@
     <apparelTags>
       <li>Tribal</li>
     </apparelTags>
+	<weaponTags>
+		<li>Lance</li>
+	</weaponTags>
   </PawnKindDef>
   <PawnKindDef Name="FungiMelee" Parentname="FungiBase">
     <defName>FungiMelee</defName>
@@ -48,6 +52,7 @@
       <li>NeolithicMeleeAdvanced</li>
 	  <li>Spear</li>
 	  <li>SpearMen</li>
+	  <li>Lance</li>
     </weaponTags>
   </PawnKindDef>
   <PawnKindDef Parentname="FungiMelee">
@@ -80,11 +85,12 @@
     <weaponTags>
       <li>NeolithicMeleeAdvanced</li>
       <li>NeolithicRangedBasic</li>
+	  <li>Lance</li>
     </weaponTags>
   </PawnKindDef>
   <PawnKindDef Name="FungiRanged" Parentname="FungiBase">
     <defName>FungiRanged</defName>
-    <label>needler</label>
+    <label>fungal needler</label>
     <race>Alien_Fungi</race>
     <defaultFactionType>FungiFaction</defaultFactionType>
     <backstoryCategories>
@@ -143,6 +149,7 @@
     <weaponTags>
       <li>NeolithicMeleeAdvanced</li>
       <li>NeolithicRangedChief</li>
+	  <li>Lance</li>
     </weaponTags>
   </PawnKindDef>
 </Defs>

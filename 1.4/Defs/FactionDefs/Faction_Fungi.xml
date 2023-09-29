@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Defs>
   <FactionDef Parent="FactionBase">
     <defName>FungiFaction</defName>
@@ -13,7 +14,7 @@
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
     <factionIconPath>World/FungiVillage</factionIconPath>
-    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+    <settlementTexturePath>World/FungiVillage</settlementTexturePath>
     <factionNameMaker>NamerFactionTribal</factionNameMaker>
     <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
     <techLevel>Neolithic</techLevel>
@@ -63,6 +64,22 @@
     </maxPawnCostPerTotalPointsCurve>
     <pawnGroupMakers>
       <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <FungiMelee>15</FungiMelee>
+          <FungiRanged>10</FungiRanged>
+          <FungiChief>3</FungiChief>
+		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">4</TSP_VFEF_FakeFungi>
+        </options>
+      </li>
+      <li MayRequire="vanillaracesexpanded.fungoid">
+        <kindDef  MayRequire="vanillaracesexpanded.fungoid">Peaceful</kindDef>
+        <options  MayRequire="vanillaracesexpanded.fungoid">
+          <FungiChief  MayRequire="vanillaracesexpanded.fungoid">0.5</FungiChief>
+		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">4</TSP_VFEF_FakeFungi>
+        </options>
+      </li>
+      <li>
         <!-- Normal fights, ranged with melee mix-ins -->
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
@@ -70,14 +87,24 @@
           <FungiMelee>25</FungiMelee>
           <FungiRanged>15</FungiRanged>
           <FungiChief>5</FungiChief>
+		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">4</TSP_VFEF_FakeFungi>
         </options>
       </li>
       <li>
-        <kindDef>Peaceful</kindDef>
+        <!-- Abnormal fights, lethal swarms of Shroomimals! -->
+        <kindDef>Combat</kindDef>
+        <commonality>40</commonality>
         <options>
-          <FungiMelee>15</FungiMelee>
-          <FungiRanged>10</FungiRanged>
-          <FungiChief>3</FungiChief>
+          <Shroomimal>999</Shroomimal>
+		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">1</TSP_VFEF_FakeFungi>
+        </options>
+      </li>
+      <li MayRequire="vanillaracesexpanded.fungoid">
+        <!-- ASSUME THE POSITION. -->
+        <kindDef MayRequire="vanillaracesexpanded.fungoid">Combat</kindDef>
+        <commonality MayRequire="vanillaracesexpanded.fungoid">40</commonality>
+        <options MayRequire="vanillaracesexpanded.fungoid">
+		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">999</TSP_VFEF_FakeFungi>
         </options>
       </li>
       <li>
@@ -93,6 +120,8 @@
         <guards>
           <FungiMelee>12</FungiMelee>
           <FungiRanged>7</FungiRanged>
+		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">5</TSP_VFEF_FakeFungi>
+		  <Shroomimal>20</Shroomimal>
 		  <!--
           <Mercenary_Slasher>3</Mercenary_Slasher>
           <Mercenary_Gunner>1</Mercenary_Gunner>
@@ -106,6 +135,8 @@
           <FungiMelee>25</FungiMelee>
           <FungiRanged>20</FungiRanged>
           <FungiChief>12</FungiChief>
+		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">7</TSP_VFEF_FakeFungi>
+		  <Shroomimal>15</Shroomimal>
         </options>
       </li>
     </pawnGroupMakers>
@@ -121,7 +152,7 @@
 	<modExtensions>
 		<li Class="VFEEmpire.FactionExtension_Deserters" MayRequire="oskarpotocki.vfe.empire">
 			<canSendDeserters MayRequire="oskarpotocki.vfe.empire">true</canSendDeserters>
-			<deserterKind MayRequire="oskarpotocki.vfe.empire">VFEE_Deserter</deserterKind>
+			<deserterKind MayRequire="oskarpotocki.vfe.empire">TSP_VFEE_TraitorFungusAmongUs</deserterKind>
 		</li>
 	</modExtensions>
   </FactionDef>
