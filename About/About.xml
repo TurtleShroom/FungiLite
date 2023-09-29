@@ -35,11 +35,12 @@
 		<li>sirmashedpotato.morrowrim</li>
 		<li>epicfloor.mycoidcattle</li>
 		<li>error277.tunneler.expanded</li>
+		<li>Neco.genes</li>
+		<li>vanillaracesexpanded.fungoid</li>
 	</loadAfter>
 	<loadBefore>
 		<li>TSP.UniformMushrooms</li>
 		<li>tsp.isengriff.storytime</li>
-		<li>tsp.mudkid.thrumbojosh.brah</li>
 	</loadBefore>
   <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of Druidefuzis mod
