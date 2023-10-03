@@ -209,8 +209,8 @@
           </li>
           <li>
             <relation>Fiance</relation>
-            <label>Bonded</label>
-            <femaleLabel>Bonded</femaleLabel>
+            <label>Binding</label>
+            <femaleLabel>Binding</femaleLabel>
           </li>
         </renamer>
       </relationSettings>
@@ -221,7 +221,7 @@
           <li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
         </blackGeneList>
         <blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
-          <li>SkinColor</li>
+          <!-- <li>SkinColor</li> -->
           <li>HairColor</li>
           <li>EyeColor</li>
           <li>BodyType</li>
@@ -232,7 +232,7 @@
           <li>Headbone</li>
           <li>HairStyle</li>
           <li>BeardStyle</li>
-          <li>SkinColorOverride</li>
+          <!-- <li>SkinColorOverride</li> -->
           <li>Fur</li>
           <!-- <li>Tail</li> -->
         </blackGeneTags>

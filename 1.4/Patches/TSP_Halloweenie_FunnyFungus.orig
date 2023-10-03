@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/FactionDef[defName="FungiFaction"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="FungiFaction"]/pawnGroupMarkers/li[kindDef="Combat"]/options</xpath>
+			<success>Always</success>
+			<value>
+				<FunnyFungus MayRequire="halloweenparade.velcroboy333">5</FunnyFungus>
+			</value>
+		</match>
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/FactionDef[defName="FungiFaction"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="FungiFaction"]/pawnGroupMarkers/li/guards</xpath>
+			<success>Always</success>
+			<value>
+				<FunnyFungus MayRequire="halloweenparade.velcroboy333">15</FunnyFungus>
+				<Shroomimal MayRequire="mlie.fungilite">10</Shroomimal>
+			</value>
+		</match>
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/FactionDef[defName="FungiFaction"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="FungiFaction"]/pawnGroupMarkers/li/carriers</xpath>
+			<success>Always</success>
+			<value>
+				<Reaper MayRequire="halloweenparade.velcroboy333">1</Reaper>
+				<Scarecrow MayRequire="halloweenparade.velcroboy333">5</Scarecrow>
+			</value>
+		</match>
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/FactionDef[defName="FungiFaction"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="FungiFaction"]/pawnGroupMarkers/li[kindDef="Settlement"]/options</xpath>
+			<success>Always</success>
+			<value>
+				<!-- Group Seven: "Settlement" -->
+				<FunnyFungus MayRequire="halloweenparade.velcroboy333">15</FunnyFungus>
+				<Shroomimal MayRequire="mlie.fungilite">15</Shroomimal>
+			</value>
+		</match>
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/FactionDef[defName="FungiFaction"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="FungiFaction"]/pawnGroupMarkers</xpath>
+			<success>Always</success>
+			<value>
+				<li MayRequire="halloweenparade.velcroboy333">
+					<kindDef MayRequire="halloweenparade.velcroboy333">Combat</kindDef>
+					<commonality  MayRequire="halloweenparade.velcroboy333">20</commonality>
+					<options MayRequire="halloweenparade.velcroboy333">
+						<FunnyFungus MayRequire="halloweenparade.velcroboy333">500</FunnyFungus>
+						<Shroomimal MayRequire="halloweenparade.velcroboy333">100</Shroomimal>
+					</options>
+				</li>
+			</value>
+		</match>
+    </Operation>
+</Patch>

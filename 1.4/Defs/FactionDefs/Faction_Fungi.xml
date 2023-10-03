@@ -65,6 +65,7 @@
     <pawnGroupMakers>
       <li>
         <kindDef>Peaceful</kindDef>
+		<commonality>100</commonality>
         <options>
           <FungiMelee>15</FungiMelee>
           <FungiRanged>10</FungiRanged>
@@ -73,8 +74,9 @@
         </options>
       </li>
       <li MayRequire="vanillaracesexpanded.fungoid">
-        <kindDef  MayRequire="vanillaracesexpanded.fungoid">Peaceful</kindDef>
-        <options  MayRequire="vanillaracesexpanded.fungoid">
+        <kindDef MayRequire="vanillaracesexpanded.fungoid">Peaceful</kindDef>
+        <options MayRequire="vanillaracesexpanded.fungoid">
+		<commonality MayRequire="vanillaracesexpanded.fungoid">20</commonality>
           <FungiChief  MayRequire="vanillaracesexpanded.fungoid">0.5</FungiChief>
 		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">4</TSP_VFEF_FakeFungi>
         </options>
@@ -88,6 +90,7 @@
           <FungiRanged>15</FungiRanged>
           <FungiChief>5</FungiChief>
 		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">4</TSP_VFEF_FakeFungi>
+		  <FunnyFungus MayRequire="halloweenparade.velcroboy333">5</FunnyFungus>
         </options>
       </li>
       <li>
@@ -96,6 +99,15 @@
         <commonality>40</commonality>
         <options>
           <Shroomimal>999</Shroomimal>
+		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">1</TSP_VFEF_FakeFungi>
+        </options>
+      </li>
+      <li>
+        <!-- Abnormal fights, lethal swarms of Funny Fungi! -->
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
+        <options>
+          <FunnyFungus MayRequire="halloweenparade.velcroboy333">999</FunnyFungus>
 		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">1</TSP_VFEF_FakeFungi>
         </options>
       </li>
@@ -113,30 +125,42 @@
           <FungiTrader>1</FungiTrader>
         </traders>
         <carriers>
-          <Muffalo>1</Muffalo>
-          <Dromedary>15</Dromedary>
-          <Alpaca>1</Alpaca>
+			<Muffalo>1</Muffalo>
+			<Dromedary>25</Dromedary>
+			<Alpaca>1</Alpaca>
+			<Reaper MayRequire="halloweenparade.velcroboy333">1</Reaper>
+			<Scarecrow MayRequire="halloweenparade.velcroboy333">10</Scarecrow>
         </carriers>
         <guards>
-          <FungiMelee>12</FungiMelee>
-          <FungiRanged>7</FungiRanged>
-		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">5</TSP_VFEF_FakeFungi>
-		  <Shroomimal>20</Shroomimal>
-		  <!--
-          <Mercenary_Slasher>3</Mercenary_Slasher>
-          <Mercenary_Gunner>1</Mercenary_Gunner>
-          <Mercenary_Elite>1</Mercenary_Elite>
-		  -->
+			<FungiMelee>12</FungiMelee>
+			<FungiRanged>7</FungiRanged>
+			<TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">5</TSP_VFEF_FakeFungi>
+			<Shroomimal>20</Shroomimal>
+			<FunnyFungus MayRequire="halloweenparade.velcroboy333">15</FunnyFungus>
+			<!--
+			<Mercenary_Slasher>3</Mercenary_Slasher>
+			<Mercenary_Gunner>1</Mercenary_Gunner>
+			<Mercenary_Elite>1</Mercenary_Elite>
+			-->
         </guards>
       </li>
+		<li MayRequire="halloweenparade.velcroboy333">
+			<kindDef MayRequire="halloweenparade.velcroboy333">Combat</kindDef>
+			<commonality  MayRequire="halloweenparade.velcroboy333">20</commonality>
+			<options MayRequire="halloweenparade.velcroboy333">
+				<FunnyFungus MayRequire="halloweenparade.velcroboy333">500</FunnyFungus>
+				<Shroomimal MayRequire="halloweenparade.velcroboy333">100</Shroomimal>
+			</options>
+		</li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <FungiMelee>25</FungiMelee>
-          <FungiRanged>20</FungiRanged>
-          <FungiChief>12</FungiChief>
-		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">7</TSP_VFEF_FakeFungi>
-		  <Shroomimal>15</Shroomimal>
+			<FungiMelee>35</FungiMelee>
+			<FungiRanged>30</FungiRanged>
+			<FungiChief>20</FungiChief>
+			<TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">7</TSP_VFEF_FakeFungi>
+			<Shroomimal>15</Shroomimal>
+			<FunnyFungus MayRequire="halloweenparade.velcroboy333">15</FunnyFungus>
         </options>
       </li>
     </pawnGroupMakers>
