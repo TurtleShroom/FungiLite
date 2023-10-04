@@ -1,6 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Patch>
+	<!-- Aelanna's Model No-Match Detector and Insertion Code -->
+	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/race/leatherDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/race/leatherDef</xpath>
+			<success>Always</success>
+			<value>
+				<leatherDef Inherit="False"></leatherDef>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/race/useMeatFrom</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/race/useMeatFrom</xpath>
+			<success>Always</success>
+			<value>
+				<useMeatFrom Inherit="False"></useMeatFrom>
+			</value>
+		</nomatch>
+	</Operation>
+
 	<Operation Class="PatchOperationConditional">
 		<!-- Does this exist? -->
 		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]</xpath>
@@ -34,19 +60,11 @@
 		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/race/leatherDef</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/race</xpath>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/race/leatherDef</xpath>
 			<value>
 				<leatherDef>RawFungus</leatherDef>
 			</value>
 		</match>
-		<!-- If it DOES NOT, add this. -->
-		<nomatch Class="PatchOperationAdd">
-			<success>Always</success>
-			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/race</xpath>
-			<value>
-				<leatherDef>RawFungus</leatherDef>
-			</value>
-		</nomatch>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 </Patch>
