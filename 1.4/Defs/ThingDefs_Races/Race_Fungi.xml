@@ -3,7 +3,7 @@
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>Alien_Fungi</defName>
     <label>Fungi</label>
-    <description>Once a slave race of genetical manipulated humans, they call themself Fungi. They accepted their past and are now trying to live a normal life, nearly all of them are night active.</description>
+    <description>Once a slave race of genetically manipulated men, they call themselves Fungi. They accepted their past and are now trying to live a normal life; nearly all of them are nocturnal.</description>
     <alienRace>
       <generalSettings>
         <maleGenderProbability>0.5</maleGenderProbability>
@@ -242,7 +242,10 @@
           <li>Melanin</li>
           <li>HairColor</li>
           <li>Ears</li>
+          <li>HairStyle</li>
+          <li>BeardStyle</li>
           <!-- <li>Nose</li> -->
+		  <li>Fur</li>
           <li>Jaw</li>
           <li>Head</li>
           <li>BodyType</li>
@@ -501,6 +504,8 @@
 			<li>FungiPlayerTribe</li>
           </factionDefs>
         </li>
+		<!-- Why does this show up as a Base Line man in the Pawn Selection screen? He never has a Xenotype... -->
+		<!--
         <li MayRequire="vanillaracesexpanded.fungoid">
           <pawnKindEntries MayRequire="vanillaracesexpanded.fungoid">
 			<li MayRequire="vanillaracesexpanded.fungoid">
@@ -515,6 +520,7 @@
 			<li MayRequire="vanillaracesexpanded.fungoid">FungiPlayerTribe</li>
           </factionDefs>
         </li>
+		-->
         <li>
           <pawnKindEntries>
             <li>
@@ -523,12 +529,15 @@
               </kindDefs>
               <chance>10</chance>
             </li>
+			<!-- Why does this show up as a Base Line man in the Pawn Selection screen? He never has a Xenotype... -->
+			<!--
 			<li MayRequire="vanillaracesexpanded.fungoid">
 			  <kindDefs MayRequire="vanillaracesexpanded.fungoid">
 				<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
 			  </kindDefs>
 			  <chance MayRequire="vanillaracesexpanded.fungoid">0.75</chance>
 			</li>
+			-->
           </pawnKindEntries>
           <factionDefs>
             <li>PlayerColony</li>
@@ -543,12 +552,15 @@
           </kindDefs>
           <chance>17.0</chance>
         </li>
+		<!-- Why does this show up as a Base Line man in the Pawn Selection screen? He never has a Xenotype... -->
+		<!--
         <li MayRequire="vanillaracesexpanded.fungoid">
           <kindDefs MayRequire="vanillaracesexpanded.fungoid">
 			<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
           </kindDefs>
           <chance MayRequire="vanillaracesexpanded.fungoid">1.7</chance>
         </li>
+		-->
       </alienslavekinds>
       <alienrefugeekinds>
         <li>
@@ -557,12 +569,15 @@
           </kindDefs>
           <chance>6.0</chance>
         </li>
+		<!-- Why does this show up as a Base Line man in the Pawn Selection screen? He never has a Xenotype... -->
+		<!--
         <li MayRequire="vanillaracesexpanded.fungoid">
           <kindDefs MayRequire="vanillaracesexpanded.fungoid">
 			<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
           </kindDefs>
           <chance MayRequire="vanillaracesexpanded.fungoid">1.7</chance>
         </li>
+		-->
       </alienrefugeekinds>
       <alienwandererkinds>
         <li>
@@ -574,12 +589,15 @@
               <chance>10.0</chance>
             </li>
           </pawnKindEntries>
+		  <!-- Why does this show up as a Base Line man in the Pawn Selection screen? He never has a Xenotype... -->
+		  <!--
         <li MayRequire="vanillaracesexpanded.fungoid">
           <kindDefs MayRequire="vanillaracesexpanded.fungoid">
 			<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
           </kindDefs>
           <chance MayRequire="vanillaracesexpanded.fungoid">7</chance>
         </li>
+		-->
           <factionDefs>
             <li>PlayerColony</li>
             <li>PlayerTribe</li>
