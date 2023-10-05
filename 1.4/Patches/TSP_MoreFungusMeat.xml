@@ -7,7 +7,7 @@
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/race/leatherDef</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/race/leatherDef</xpath>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/race</xpath>
 			<success>Always</success>
 			<value>
 				<leatherDef Inherit="False"></leatherDef>
@@ -19,7 +19,7 @@
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/race/useMeatFrom</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/race/useMeatFrom</xpath>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/race</xpath>
 			<success>Always</success>
 			<value>
 				<useMeatFrom Inherit="False"></useMeatFrom>

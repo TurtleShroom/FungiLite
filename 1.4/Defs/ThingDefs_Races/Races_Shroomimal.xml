@@ -335,7 +335,9 @@
     </ingredient>
     <tradeTags>
       <li>AnimalCommon</li>
+	  <li>AnimalFighter</li>
 	  <li>AnimalEvilFungus</li>
+	  <li>FungiTrade_Shroomimal</li>
     </tradeTags>
 		<modExtensions>
 			<li Class="MorrowRim.ExtendedRaceProperties" MayRequire="SirMashedPotato.MorrowRim">

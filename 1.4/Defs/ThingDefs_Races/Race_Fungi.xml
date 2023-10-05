@@ -20,6 +20,7 @@
             <defName>Nudist</defName>
           </li>
         </disallowedTraits>
+		<!--
         <factionRelations>
           <li>
             <factions>
@@ -32,6 +33,7 @@
             </goodwill>
           </li>
         </factionRelations>
+		-->
         <maxDamageForSocialfight>1</maxDamageForSocialfight>
 		<humanRecipeImport>true</humanRecipeImport>
         <alienPartGenerator>
@@ -373,27 +375,27 @@
         </li>
       </lifeStageAges>
 			<lifeStageWorkSettings MayRequire="Ludeon.Rimworld.Biotech">
-				<Firefighter>3</Firefighter>
+				<Firefighter>0</Firefighter>
 				<Patient>0</Patient>
-				<Doctor>4</Doctor>
+				<Doctor>3</Doctor>
 				<PatientBedRest>0</PatientBedRest>
 				<Childcare MayRequire="Ludeon.Rimworld.Biotech">0</Childcare>
 				<BasicWorker>0</BasicWorker>
-				<Warden>1</Warden>
-				<Handling>0</Handling>
+				<Warden>0</Warden>
+				<Handling>1</Handling>
 				<Cooking>0</Cooking>
-				<Hunting>0</Hunting>
+				<Hunting>3</Hunting>
 				<Construction>1</Construction>
 				<Growing>0</Growing>
 				<Mining>2</Mining>
-				<PlantCutting>0</PlantCutting>
-				<Smithing>0</Smithing>
-				<Tailoring>0</Tailoring>
-				<Art>1</Art>
-				<Crafting>0</Crafting>
-				<Hauling>1</Hauling>
+				<PlantCutting>1</PlantCutting>
+				<Smithing>1</Smithing>
+				<Tailoring>1</Tailoring>
+				<Art>4</Art>
+				<Crafting>1</Crafting>
+				<Hauling>0</Hauling>
 				<Cleaning>0</Cleaning>
-				<Research>4</Research>
+				<Research>3</Research>
 			</lifeStageWorkSettings>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
@@ -499,14 +501,34 @@
 			<li>FungiPlayerTribe</li>
           </factionDefs>
         </li>
+        <li MayRequire="vanillaracesexpanded.fungoid">
+          <pawnKindEntries MayRequire="vanillaracesexpanded.fungoid">
+			<li MayRequire="vanillaracesexpanded.fungoid">
+			  <kindDefs MayRequire="vanillaracesexpanded.fungoid">
+				<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
+			  </kindDefs>
+			  <chance MayRequire="vanillaracesexpanded.fungoid">0.7</chance>
+			</li>
+          </pawnKindEntries>
+          <factionDefs MayRequire="vanillaracesexpanded.fungoid">
+            <li MayRequire="vanillaracesexpanded.fungoid">PlayerTribe</li>
+			<li MayRequire="vanillaracesexpanded.fungoid">FungiPlayerTribe</li>
+          </factionDefs>
+        </li>
         <li>
           <pawnKindEntries>
             <li>
               <kindDefs>
                 <li>PlayerFungi</li>
               </kindDefs>
-              <chance>4.5</chance>
+              <chance>10</chance>
             </li>
+			<li MayRequire="vanillaracesexpanded.fungoid">
+			  <kindDefs MayRequire="vanillaracesexpanded.fungoid">
+				<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
+			  </kindDefs>
+			  <chance MayRequire="vanillaracesexpanded.fungoid">0.75</chance>
+			</li>
           </pawnKindEntries>
           <factionDefs>
             <li>PlayerColony</li>
@@ -517,8 +539,15 @@
         <li>
           <kindDefs>
             <li>PlayerFungi</li>
+			<li>TSP_VFEF_FakeFungi</li>
           </kindDefs>
-          <chance>15.0</chance>
+          <chance>17.0</chance>
+        </li>
+        <li MayRequire="vanillaracesexpanded.fungoid">
+          <kindDefs MayRequire="vanillaracesexpanded.fungoid">
+			<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
+          </kindDefs>
+          <chance MayRequire="vanillaracesexpanded.fungoid">1.7</chance>
         </li>
       </alienslavekinds>
       <alienrefugeekinds>
@@ -527,6 +556,12 @@
             <li>PlayerFungi</li>
           </kindDefs>
           <chance>6.0</chance>
+        </li>
+        <li MayRequire="vanillaracesexpanded.fungoid">
+          <kindDefs MayRequire="vanillaracesexpanded.fungoid">
+			<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
+          </kindDefs>
+          <chance MayRequire="vanillaracesexpanded.fungoid">1.7</chance>
         </li>
       </alienrefugeekinds>
       <alienwandererkinds>
@@ -539,6 +574,12 @@
               <chance>10.0</chance>
             </li>
           </pawnKindEntries>
+        <li MayRequire="vanillaracesexpanded.fungoid">
+          <kindDefs MayRequire="vanillaracesexpanded.fungoid">
+			<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
+          </kindDefs>
+          <chance MayRequire="vanillaracesexpanded.fungoid">7</chance>
+        </li>
           <factionDefs>
             <li>PlayerColony</li>
             <li>PlayerTribe</li>

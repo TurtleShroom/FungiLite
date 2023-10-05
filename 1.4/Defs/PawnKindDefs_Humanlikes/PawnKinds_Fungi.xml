@@ -25,7 +25,7 @@
   </PawnKindDef>
   <PawnKindDef Name="FungiMelee" Parentname="FungiBase">
     <defName>FungiMelee</defName>
-    <label>fighter</label>
+    <label>fungi fighter</label>
     <race>Alien_Fungi</race>
     <backstoryCategories>
       <li>Tribal</li>

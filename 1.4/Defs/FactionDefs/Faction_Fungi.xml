@@ -42,16 +42,18 @@
       <li>Caravan_Neolithic_WarMerchant</li>
       <li>Caravan_Neolithic_Slaver</li>
       <li>Caravan_Neolithic_ShamanMerchant</li>
+	  <li>Visitor_Fungi_Standard</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
-      <li>Visitor_Fungi_Standard</li>
+      <!-- <li>Visitor_Fungi_Standard</li> -->
+	  <li>Visitor_Outlander_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
       <li>Base_Neolithic_Standard</li>
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>
-      <min>-40</min>
-      <max>50</max>
+      <min>-100</min>
+      <max>100</max>
     </allowedArrivalTemperatureRange>
     <maxPawnCostPerTotalPointsCurve>
       <points>
@@ -102,11 +104,11 @@
 		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">1</TSP_VFEF_FakeFungi>
         </options>
       </li>
-      <li>
+      <li MayRequire="halloweenparade.velcroboy333">
         <!-- Abnormal fights, lethal swarms of Funny Fungi! -->
-        <kindDef>Combat</kindDef>
-        <commonality>30</commonality>
-        <options>
+        <kindDef MayRequire="halloweenparade.velcroboy333">Combat</kindDef>
+        <commonality MayRequire="halloweenparade.velcroboy333">30</commonality>
+        <options MayRequire="halloweenparade.velcroboy333">
           <FunnyFungus MayRequire="halloweenparade.velcroboy333">999</FunnyFungus>
 		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">1</TSP_VFEF_FakeFungi>
         </options>
@@ -158,8 +160,8 @@
 			<FungiMelee>35</FungiMelee>
 			<FungiRanged>30</FungiRanged>
 			<FungiChief>20</FungiChief>
-			<TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">7</TSP_VFEF_FakeFungi>
 			<Shroomimal>15</Shroomimal>
+			<TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">7</TSP_VFEF_FakeFungi>
 			<FunnyFungus MayRequire="halloweenparade.velcroboy333">15</FunnyFungus>
         </options>
       </li>
