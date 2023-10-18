@@ -493,6 +493,12 @@
               </kindDefs>
               <chance>10.0</chance>
             </li>
+			<li>
+				<kindDefs>
+					<li>TSP_FungiSlave</li>
+				</kindDefs>
+				<chance>0.45</chance>
+			</li>
           </pawnKindEntries>
           <factionDefs>
             <li>PlayerTribe</li>
@@ -524,6 +530,12 @@
               </kindDefs>
               <chance>10</chance>
             </li>
+			<li>
+				<kindDefs>
+					<li>TSP_FungiSlave</li>
+				</kindDefs>
+				<chance>0.45</chance>
+			</li>
 			<!-- Why does this show up as a Base Line man in the Pawn Selection screen? He never has a Xenotype... -->
 			<!--
 			<li MayRequire="vanillaracesexpanded.fungoid">
@@ -542,8 +554,8 @@
       <alienslavekinds>
         <li>
           <kindDefs>
-            <li>PlayerFungi</li>
-			<li>TSP_VFEF_FakeFungi</li>
+            <li>TSP_FungiSlave</li>
+			<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
           </kindDefs>
           <chance>17.0</chance>
         </li>
@@ -561,6 +573,8 @@
         <li>
           <kindDefs>
             <li>PlayerFungi</li>
+			<li>TSP_FungiSlave</li>
+			<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
           </kindDefs>
           <chance>6.0</chance>
         </li>
@@ -580,6 +594,7 @@
             <li>
               <kindDefs>
                 <li>FungiMelee</li>
+				<li>TSP_FungiSlave</li>
               </kindDefs>
               <chance>10.0</chance>
             </li>
