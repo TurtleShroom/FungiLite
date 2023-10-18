@@ -3,7 +3,7 @@
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>Alien_Fungi</defName>
     <label>Fungi</label>
-    <description>Once a slave race of genetically manipulated men, they call themselves Fungi. They accepted their past and are now trying to live a normal life; nearly all of them are nocturnal. Occasionally, a Fungi will still be found that was grown in a vat for a master.</description>
+    <description> Fungi were once a slave race of genetically manipulated men. They accepted their past and are now trying to live a normal life; nearly all of them are nocturnal. Occasionally, a Fungi will still be found that was grown in a vat for a master.</description>
     <alienRace>
       <generalSettings>
         <maleGenderProbability>0.5</maleGenderProbability>
@@ -241,11 +241,6 @@
         <blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
           <li>Melanin</li>
           <li>HairColor</li>
-          <li>Ears</li>
-          <li>HairStyle</li>
-          <li>BeardStyle</li>
-          <!-- <li>Nose</li> -->
-		  <li>Fur</li>
           <li>Jaw</li>
           <li>Head</li>
           <li>BodyType</li>

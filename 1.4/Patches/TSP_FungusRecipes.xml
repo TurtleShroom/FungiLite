@@ -18,7 +18,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName="BMT_MakeMushroomMust"]/fixedIngredientFiler/thingDefs</xpath>
+					<xpath>/Defs/RecipeDef[defName="BMT_MakeMushroomMust"]/fixedIngredientFilter/thingDefs</xpath>
 					<success>Always</success>
 					<value>
 						<li MayRequire="mlie.fungilite">TSP_FungiFungus</li>

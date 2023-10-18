@@ -21,6 +21,8 @@
 						</xenotypeChances>
 					</xenotypeSet>
 					<backstoryCategories Inherit="False">
+						<li>Vatgrown</li>
+						<li>VatGrown</li>
 						<li>Tribal</li>
 						<li MayRequire="zal.folia">DeathkapFactionBackstories</li>
 					</backstoryCategories>

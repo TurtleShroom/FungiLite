@@ -81,6 +81,7 @@
         <thingDefs>
           <li>Cloth</li>
           <li>Chocolate</li>
+		  <li>RawFungus</li>
         </thingDefs>
       </li>
     </stockGenerators>
