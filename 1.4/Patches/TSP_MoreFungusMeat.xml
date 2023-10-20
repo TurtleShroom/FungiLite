@@ -67,4 +67,56 @@
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Deathkap_Race"]/race/leatherDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="AA_FungalHusk"]/race</xpath>
+			<success>Always</success>
+			<value>
+				<leatherDef Inherit="False"></leatherDef>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="AA_FungalHusk"]/race/useMeatFrom</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="AA_FungalHusk"]/race</xpath>
+			<success>Always</success>
+			<value>
+				<useMeatFrom Inherit="False"></useMeatFrom>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="AA_FungalHusk"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="AA_FungalHusk"]/race/useMeatFrom</xpath>
+			<value>
+				<specificMeatDef>TSP_FungiFungus</specificMeatDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="AA_FungalHusk"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="AA_FungalHusk"]/statBases/MeatAmount</xpath>
+			<value>
+				<MeatAmount>200</MeatAmount>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
 </Patch>
