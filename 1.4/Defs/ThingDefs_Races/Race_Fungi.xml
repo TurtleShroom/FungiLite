@@ -3,7 +3,7 @@
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>Alien_Fungi</defName>
     <label>Fungi</label>
-    <description>Once a slave race of genetical manipulated humans, they call themself Fungi. They accepted their past and are now trying to live a normal life, nearly all of them are night active.</description>
+    <description>Fungi were once a slave race of genetically manipulated men. They accepted their past and are now trying to live a normal life; nearly all of them are nocturnal. Occasionally, a Fungi will still be found that was grown in a vat for a master.</description>
     <alienRace>
       <generalSettings>
         <maleGenderProbability>0.5</maleGenderProbability>
@@ -20,6 +20,7 @@
             <defName>Nudist</defName>
           </li>
         </disallowedTraits>
+		<!--
         <factionRelations>
           <li>
             <factions>
@@ -32,7 +33,9 @@
             </goodwill>
           </li>
         </factionRelations>
-        <maxDamageForSocialfight>5</maxDamageForSocialfight>
+		-->
+        <maxDamageForSocialfight>1</maxDamageForSocialfight>
+		<humanRecipeImport>true</humanRecipeImport>
         <alienPartGenerator>
           <headTypes Inherit="False">
             <li>Female_Evfu_Normal</li>
@@ -127,21 +130,55 @@
       </styleSettings>
       <thoughtSettings>
         <cannotReceiveThoughts>
-          <li>ObservedLayingCorpse</li>
-          <li>EnvironmentDark</li>
-          <li>NeedOutdoors</li>
-          <li>AteCorpse</li>
-          <li>AteHumanlikeMeatDirect</li>
-          <li>AteHumanlikeMeatAsIngredient</li>
-          <li>AteHumanlikeMeatAsIngredientCannibal</li>
-          <li>KnowPrisonerSold</li>
-          <li>KnowGuestOrganHarvested</li>
-          <li>KnowButcheredHumanlikeCorpse</li>
-          <li>ButcheredHumanlikeCorpse</li>
-          <li>WitnessedDeathNonAlly</li>
-          <li>PrisonerBanishedToDie</li>
-          <li>Naked</li>
-          <li>ButcheredHumanlikeCorpseOpinion</li>
+			<li>ObservedLayingCorpse</li>
+			<li>EnvironmentDark</li>
+			<li>NeedOutdoors</li>
+			<li>AteCorpse</li>
+			<li>AteKibble</li>
+			<li>AteHumanlikeMeatDirect</li>
+			<li>AteHumanlikeMeatAsIngredient</li>
+			<li>KnowPrisonerSold</li>
+			<li>KnowGuestOrganHarvested</li>
+			<li>KnowButcheredHumanlikeCorpse</li>
+			<li>ButcheredHumanlikeCorpse</li>
+			<li>ButcheredHumanlikeCorpseOpinion</li>
+			<li>WitnessedDeathNonAlly</li>
+			<li>PrisonerBanishedToDie</li>
+			<li>Naked</li>
+			<li>ApparelDamaged</li>
+			<li>DeadMansApparel</li>
+			<li MayRequire="ludeon.rimworld.ideology">AteFungus_Despised</li>
+			<li MayRequire="ludeon.rimworld.ideology">AteFungusAsIngredient_Despised</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartCovered_Disapproved_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartCovered_Disapproved_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartCovered_Disapproved_Memory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartCovered_Disapproved_Social_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartCovered_Disapproved_Social_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartButGroinCovered_Disapproved_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartButGroinCovered_Disapproved_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartButGroinCovered_Disapproved_Memory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartButGroinCovered_Disapproved_Social_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartButGroinCovered_Disapproved_Social_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Social_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Social_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Social_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Social_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestOrHairUncovered_Disapproved_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestOrHairUncovered_Disapproved_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestHairOrFaceUncovered_Disapproved_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestHairOrFaceUncovered_Disapproved_Female</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestHairOrFaceUncovered_Disapproved_Social_Male</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestHairOrFaceUncovered_Disapproved_Social_Female</li>
+			
+			<!-- Fungi sow their children, so they don't have a taboo against Growth Vats, even if the Faction they are in does. -->
+			<li MayRequire="ludeon.rimworld.biotech">GrowthVat_Prohibited_GrowthVatInColony</li>
+			<li MayRequire="ludeon.rimworld.biotech">GrowthVat_Prohibited_ChildInGrowthVat</li>
         </cannotReceiveThoughts>
       </thoughtSettings>
       <relationSettings>
@@ -154,18 +191,18 @@
           </li>
           <li>
             <relation>Child</relation>
-            <label>Child</label>
-            <femaleLabel>Child</femaleLabel>
+            <label>Spore</label>
+            <femaleLabel>Spore</femaleLabel>
           </li>
           <li>
             <relation>Spouse</relation>
-            <label>Spouse</label>
-            <femaleLabel>Spouse</femaleLabel>
+            <label>Bonded</label>
+            <femaleLabel>Bonded</femaleLabel>
           </li>
           <li>
             <relation>ExSpouse</relation>
-            <label>ExSpouse</label>
-            <femaleLabel>ExSpouse</femaleLabel>
+            <label>Formerly Bound</label>
+            <femaleLabel>Formerly Bound</femaleLabel>
           </li>
           <li>
             <relation>Sibling</relation>
@@ -174,8 +211,8 @@
           </li>
           <li>
             <relation>Fiance</relation>
-            <label>Betrothed</label>
-            <femaleLabel>Betrothed</femaleLabel>
+            <label>Binding</label>
+            <femaleLabel>Binding</femaleLabel>
           </li>
         </renamer>
       </relationSettings>
@@ -185,27 +222,25 @@
           <li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
           <li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
         </blackGeneList>
-        <blackGeneTags>
-          <li>SkinColor</li>
+        <blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
+          <!-- <li>SkinColor</li> -->
           <li>HairColor</li>
           <li>EyeColor</li>
           <li>BodyType</li>
           <li>Ears</li>
-          <li>Nose</li>
+          <!-- <li>Nose</li> -->
           <li>Jaw</li>
           <li>Head</li>
           <li>Headbone</li>
           <li>HairStyle</li>
           <li>BeardStyle</li>
-          <li>SkinColorOverride</li>
+          <!-- <li>SkinColorOverride</li> -->
           <li>Fur</li>
-          <li>Tail</li>
+          <!-- <li>Tail</li> -->
         </blackGeneTags>
-        <blackEndoCategories>
+        <blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
           <li>Melanin</li>
           <li>HairColor</li>
-          <li>Ears</li>
-          <li>Nose</li>
           <li>Jaw</li>
           <li>Head</li>
           <li>BodyType</li>
@@ -213,16 +248,22 @@
       </raceRestriction>
     </alienRace>
     <statBases>
-      <MarketValue>1500</MarketValue>
+      <MarketValue>1000</MarketValue>
       <MoveSpeed>3.5</MoveSpeed>
       <Flammability>0.8</Flammability>
       <ComfyTemperatureMin>18</ComfyTemperatureMin>
       <ComfyTemperatureMax>45</ComfyTemperatureMax>
-      <LeatherAmount>25</LeatherAmount>
+	  <MeatAmount>90</MeatAmount>
+      <LeatherAmount>35</LeatherAmount>
       <PsychicSensitivity>0.25</PsychicSensitivity>
-      <PlantWorkSpeed>0.9</PlantWorkSpeed>
+      <PlantWorkSpeed>1.1</PlantWorkSpeed>
       <ResearchSpeed>1.2</ResearchSpeed>
-      <Mass>50</Mass>
+      <Mass>30</Mass>
+	  <HSAU_GhoulismSusceptibility MayRequire="baskerville.hellsingarmsultimate">0.2</HSAU_GhoulismSusceptibility>
+	  <HSAU_SanctusSensitivity MayRequire="baskerville.hellsingarmsultimate" Inherit="False">0.03</HSAU_SanctusSensitivity>
+	  <ImmunityGainSpeed>1.1</ImmunityGainSpeed>
+	  <RoyalFavorValue MayRequire="ludeon.rimworld.royalty">3</RoyalFavorValue>
+	  <Fertility MayRequire="Ludeon.Rimworld.Biotech">0</Fertility>
     </statBases>
     <tools>
       <li>
@@ -293,19 +334,21 @@
       <body>FungiBody</body>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1.25</baseHealthScale>
-      <foodType>CarnivoreAnimal</foodType>
+      <foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Meat, Fungus, Meal, Processed, Fluid, Liquor, Kibble</foodType>
       <gestationPeriodDays>45</gestationPeriodDays>
-      <litterSizeCurve>
+	  <specificMeatDef>TSP_FungiFungus</specificMeatDef>
+	  <leatherDef>RawFungus</leatherDef>
+      <litterSizeCurve Inherit="False">
         <points>
           <li>(0.5, 0)</li>
           <li>(1, 1)</li>
-          <li>(1.01, 0.02)</li>
+          <li>(1.01, 0)</li>
           <li>(3.5, 0)</li>
         </points>
       </litterSizeCurve>
-      <lifeStageAges>
+      <lifeStageAges Inherit="False">
         <li>
-          <def>FungiSporlingStage</def>
+          <def>FungiSporelingStage</def>
           <minAge>0</minAge>
         </li>
         <li>
@@ -322,13 +365,36 @@
         </li>
         <li>
           <def>FungiElderStage</def>
-          <minAge>4</minAge>
+          <minAge>13</minAge>
         </li>
         <li>
           <def>FungiAncientStage</def>
-          <minAge>6</minAge>
+          <minAge>16</minAge>
         </li>
       </lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.Rimworld.Biotech">
+				<Firefighter>0</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>3</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.Rimworld.Biotech">0</Childcare>
+				<BasicWorker>0</BasicWorker>
+				<Warden>0</Warden>
+				<Handling>1</Handling>
+				<Cooking>0</Cooking>
+				<Hunting>3</Hunting>
+				<Construction>1</Construction>
+				<Growing>0</Growing>
+				<Mining>2</Mining>
+				<PlantCutting>1</PlantCutting>
+				<Smithing>1</Smithing>
+				<Tailoring>1</Tailoring>
+				<Art>4</Art>
+				<Crafting>1</Crafting>
+				<Hauling>0</Hauling>
+				<Cleaning>0</Cleaning>
+				<Research>3</Research>
+			</lifeStageWorkSettings>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
@@ -336,16 +402,31 @@
         <volume>(0.3, 0.8, 0.4)</volume>
         <offset>(0,0,-0.3)</offset>
       </specialShadowData>
-      <ageGenerationCurve>
-        <points>
-          <li>(0.7,0)</li>
-          <li>(2,50)</li>
-          <li>(2.1,100)</li>
-          <li>(2.2,70)</li>
-          <li>(3,18)</li>
-          <li>(3.5,10)</li>
-          <li>(4,3)</li>
-          <li>(4.5,0)</li>
+      <ageGenerationCurve Inherit="False">
+        <points Inherit="False">
+			<li>(0,0)</li>
+			<li>(0.7,0)</li>
+			<li>(2,50)</li>
+			<li>(2.1,0)</li>
+			<li>(2.2,0)</li>
+			<li>(3,0)</li>
+			<li>(3.5,0)</li>
+			<li>(4,0.1)</li>
+			<li>(5,0.4)</li>
+			<li>(6,0.5)</li>
+			<li>(8,11)</li>
+			<li>(9,20)</li>
+			<li>(10,22)</li>
+			<li>(11,3.1)</li>
+			<li>(12,1)</li>
+			<li>(13,1)</li>
+			<li>(14,1)</li>
+			<li>(15,0)</li>
+			<li>(16,0)</li>
+			<li>(20,0)</li>
+			<li>(50,0)</li>
+			<li>(75,0)</li>
+			<li>(100,0)</li>
         </points>
       </ageGenerationCurve>
       <hediffGiverSets>
@@ -353,6 +434,11 @@
         <li>Human</li>
       </hediffGiverSets>
     </race>
+    <ingredient>
+		<mergeCompatibilityTags>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+		</mergeCompatibilityTags>
+    </ingredient>
     <recipes>
       <li>InstallArchotechEye</li>
       <li>InstallArchotechArm</li>
@@ -384,7 +470,17 @@
       <li>Euthanize</li>
       <li>Anesthetize</li>
     </recipes>
+		<modExtensions>
+			<li Class="NocturnalAnimals.ExtendedRaceProperties" MayRequire="Mlie.XNDNocturnalAnimals">
+				<bodyClock MayRequire="Mlie.XNDNocturnalAnimals">Nocturnal</bodyClock>
+			</li>
+			<li Class="MorrowRim.ExtendedRaceProperties" MayRequire="SirMashedPotato.MorrowRim">
+				<ashResistant MayRequire="SirMashedPotato.MorrowRim">Resistant</ashResistant>
+			</li>
+		</modExtensions>
   </AlienRace.ThingDef_AlienRace>
+  
+  
   <AlienRace.RaceSettings>
     <defName>FungiRaceSettings</defName>
     <pawnKindSettings>
@@ -395,29 +491,102 @@
               <kindDefs>
                 <li>PlayerFungi</li>
               </kindDefs>
-              <chance>7.0</chance>
+              <chance>10.0</chance>
             </li>
+			<li>
+				<kindDefs>
+					<li>TSP_FungiSlave</li>
+				</kindDefs>
+				<chance>0.45</chance>
+			</li>
           </pawnKindEntries>
           <factionDefs>
             <li>PlayerTribe</li>
+			<li>FungiPlayerTribe</li>
+          </factionDefs>
+        </li>
+		<!-- Why does this show up as a Base Line man in the Pawn Selection screen? He never has a Xenotype... -->
+		<!--
+        <li MayRequire="vanillaracesexpanded.fungoid">
+          <pawnKindEntries MayRequire="vanillaracesexpanded.fungoid">
+			<li MayRequire="vanillaracesexpanded.fungoid">
+			  <kindDefs MayRequire="vanillaracesexpanded.fungoid">
+				<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
+			  </kindDefs>
+			  <chance MayRequire="vanillaracesexpanded.fungoid">0.7</chance>
+			</li>
+          </pawnKindEntries>
+          <factionDefs MayRequire="vanillaracesexpanded.fungoid">
+            <li MayRequire="vanillaracesexpanded.fungoid">PlayerTribe</li>
+			<li MayRequire="vanillaracesexpanded.fungoid">FungiPlayerTribe</li>
+          </factionDefs>
+        </li>
+		-->
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>PlayerFungi</li>
+              </kindDefs>
+              <chance>10</chance>
+            </li>
+			<li>
+				<kindDefs>
+					<li>TSP_FungiSlave</li>
+				</kindDefs>
+				<chance>0.45</chance>
+			</li>
+			<!-- Why does this show up as a Base Line man in the Pawn Selection screen? He never has a Xenotype... -->
+			<!--
+			<li MayRequire="vanillaracesexpanded.fungoid">
+			  <kindDefs MayRequire="vanillaracesexpanded.fungoid">
+				<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
+			  </kindDefs>
+			  <chance MayRequire="vanillaracesexpanded.fungoid">0.75</chance>
+			</li>
+			-->
+          </pawnKindEntries>
+          <factionDefs>
+            <li>PlayerColony</li>
           </factionDefs>
         </li>
       </startingColonists>
       <alienslavekinds>
         <li>
           <kindDefs>
-            <li>PlayerFungi</li>
+            <li>TSP_FungiSlave</li>
+			<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
           </kindDefs>
-          <chance>12.0</chance>
+          <chance>17.0</chance>
         </li>
+		<!-- Why does this show up as a Base Line man in the Pawn Selection screen? He never has a Xenotype... -->
+		<!--
+        <li MayRequire="vanillaracesexpanded.fungoid">
+          <kindDefs MayRequire="vanillaracesexpanded.fungoid">
+			<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
+          </kindDefs>
+          <chance MayRequire="vanillaracesexpanded.fungoid">1.7</chance>
+        </li>
+		-->
       </alienslavekinds>
       <alienrefugeekinds>
         <li>
           <kindDefs>
             <li>PlayerFungi</li>
+			<li>TSP_FungiSlave</li>
+			<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
           </kindDefs>
           <chance>6.0</chance>
         </li>
+		<!-- Why does this show up as a Base Line man in the Pawn Selection screen? He never has a Xenotype... -->
+		<!--
+        <li MayRequire="vanillaracesexpanded.fungoid">
+          <kindDefs MayRequire="vanillaracesexpanded.fungoid">
+			<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
+          </kindDefs>
+          <chance MayRequire="vanillaracesexpanded.fungoid">1.7</chance>
+        </li>
+		-->
       </alienrefugeekinds>
       <alienwandererkinds>
         <li>
@@ -425,10 +594,20 @@
             <li>
               <kindDefs>
                 <li>FungiMelee</li>
+				<li>TSP_FungiSlave</li>
               </kindDefs>
               <chance>10.0</chance>
             </li>
           </pawnKindEntries>
+		  <!-- Why does this show up as a Base Line man in the Pawn Selection screen? He never has a Xenotype... -->
+		  <!--
+        <li MayRequire="vanillaracesexpanded.fungoid">
+          <kindDefs MayRequire="vanillaracesexpanded.fungoid">
+			<li MayRequire="vanillaracesexpanded.fungoid">TSP_VFEF_FakeFungi</li>
+          </kindDefs>
+          <chance MayRequire="vanillaracesexpanded.fungoid">7</chance>
+        </li>
+		-->
           <factionDefs>
             <li>PlayerColony</li>
             <li>PlayerTribe</li>

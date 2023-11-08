@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<!-- This code was provided by the user 'I Exist', and then butchered and simplified on Dub's Discord chat room by Kyoutaigo -->
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>Defs/ThingDef[defName="RawFungus"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
+		<match Class="PatchOperationSequence">
+			<!-- <success>Always</success> -->
+			<operations>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="RawFungus"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="halloweenparade.velcroboy333">AutumnMushroom</li>
+						<li MayRequire="mlie.fungilite">TSP_FungiFungus</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawMelrotus</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawVanetike</li>
+						<li MayRequire="spoonshortage.nokumushrooms">RawNoku</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawShimmershroom</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawGlowbulb</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawGreyfields</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_AmbrosyxShroom</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_BoomSpore</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_MycelialBlocks</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_JadeGlints</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_StimquillDrug</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed,vanillaexpanded.vcooke">BMT_RawRoyalBracket</li>
+						<li MayRequire="sirmashedpotato.morrowrim">MorrowRim_RawAshFungus</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_RawDulcis</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Glimmerslime</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+						<li MayRequire="brightsideguy.gerzeeexpansion">RawGrungo</li>
+						<li MayRequire="soul.maelstromsminiplants">MaelM_RawGrubgrain</li>
+						<li MayRequire="epicfloor.mycoidcattle">MooshroomMilk</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Blisscap</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Bileceps</li>
+						<li MayRequire="error277.tunneler.expanded">shroomfiber</li>
+						<li MayRequire="error277.tunneler.expanded">shroomfiber_raw</li>
+						<li MayRequire="sarg.alphabiomes">AB_PinkRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_BlueRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+						<li MayRequire="sarg.alphaanimals">AA_AgariluxRawFungus</li>
+						<li MayRequire="sarg.alphaanimals">AA_BlackTruffles</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="RawFungus"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="halloweenparade.velcroboy333">AutumnMushroom</li>
+						<li MayRequire="mlie.fungilite">TSP_FungiFungus</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawMelrotus</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawVanetike</li>
+						<li MayRequire="spoonshortage.nokumushrooms">RawNoku</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawShimmershroom</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawGlowbulb</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawGreyfields</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_AmbrosyxShroom</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_BoomSpore</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_MycelialBlocks</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_JadeGlints</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_StimquillDrug</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed,vanillaexpanded.vcooke">BMT_RawRoyalBracket</li>
+						<li MayRequire="sirmashedpotato.morrowrim">MorrowRim_RawAshFungus</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_RawDulcis</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Glimmerslime</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+						<li MayRequire="brightsideguy.gerzeeexpansion">RawGrungo</li>
+						<li MayRequire="soul.maelstromsminiplants">MaelM_RawGrubgrain</li>
+						<li MayRequire="epicfloor.mycoidcattle">MooshroomMilk</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Blisscap</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Bileceps</li>
+						<li MayRequire="error277.tunneler.expanded">shroomfiber</li>
+						<li MayRequire="error277.tunneler.expanded">shroomfiber_raw</li>
+						<li MayRequire="sarg.alphabiomes">AB_PinkRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_BlueRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+						<li MayRequire="sarg.alphaanimals">AA_AgariluxRawFungus</li>
+						<li MayRequire="sarg.alphaanimals">AA_BlackTruffles</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="RawFungus"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="halloweenparade.velcroboy333">AutumnMushroom</li>
+						<li MayRequire="mlie.fungilite">TSP_FungiFungus</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawMelrotus</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawVanetike</li>
+						<li MayRequire="spoonshortage.nokumushrooms">RawNoku</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawShimmershroom</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawGlowbulb</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed,vanillaexpanded.vcooke">BMT_RawRoyalBracket</li>
+						<li MayRequire="sirmashedpotato.morrowrim">MorrowRim_RawAshFungus</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_RawDulcis</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Glimmerslime</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+						<li MayRequire="brightsideguy.gerzeeexpansion">RawGrungo</li>
+						<li MayRequire="soul.maelstromsminiplants">MaelM_RawGrubgrain</li>
+						<li MayRequire="epicfloor.mycoidcattle">MooshroomMilk</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Blisscap</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Bileceps</li>
+						<li MayRequire="error277.tunneler.expanded">shroomfiber_raw</li>
+						<li MayRequire="sarg.alphabiomes">AB_PinkRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_BlueRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+						<li MayRequire="sarg.alphaanimals">AA_AgariluxRawFungus</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="RawFungus"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="halloweenparade.velcroboy333">AutumnMushroom</li>
+						<li MayRequire="mlie.fungilite">TSP_FungiFungus</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawMelrotus</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawVanetike</li>
+						<li MayRequire="spoonshortage.nokumushrooms">RawNoku</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawShimmershroom</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawGlowbulb</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawGreyfields</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_AmbrosyxShroom</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_BoomSpore</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_MycelialBlocks</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_JadeGlints</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_StimquillDrug</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed,vanillaexpanded.vcooke">BMT_RawRoyalBracket</li>
+						<li MayRequire="sirmashedpotato.morrowrim">MorrowRim_RawAshFungus</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_RawDulcis</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Glimmerslime</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+						<li MayRequire="brightsideguy.gerzeeexpansion">RawGrungo</li>
+						<li MayRequire="soul.maelstromsminiplants">MaelM_RawGrubgrain</li>
+						<li MayRequire="epicfloor.mycoidcattle">MooshroomMilk</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Blisscap</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Bileceps</li>
+						<li MayRequire="error277.tunneler.expanded">shroomfiber</li>
+						<li MayRequire="error277.tunneler.expanded">shroomfiber_raw</li>
+						<li MayRequire="sarg.alphabiomes">AB_PinkRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_BlueRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+						<li MayRequire="sarg.alphaanimals">AA_AgariluxRawFungus</li>
+						<li MayRequire="sarg.alphaanimals">AA_BlackTruffles</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="RawFungus"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="halloweenparade.velcroboy333">AutumnMushroom</li>
+						<li MayRequire="mlie.fungilite">TSP_FungiFungus</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawMelrotus</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawVanetike</li>
+						<li MayRequire="spoonshortage.nokumushrooms">RawNoku</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawShimmershroom</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawGlowbulb</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawGreyfields</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_AmbrosyxShroom</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_BoomSpore</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_MycelialBlocks</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_JadeGlints</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_StimquillDrug</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed,vanillaexpanded.vcooke">BMT_RawRoyalBracket</li>
+						<li MayRequire="sirmashedpotato.morrowrim">MorrowRim_RawAshFungus</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_RawDulcis</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Glimmerslime</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+						<li MayRequire="brightsideguy.gerzeeexpansion">RawGrungo</li>
+						<li MayRequire="soul.maelstromsminiplants">MaelM_RawGrubgrain</li>
+						<li MayRequire="epicfloor.mycoidcattle">MooshroomMilk</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Blisscap</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Bileceps</li>
+						<li MayRequire="error277.tunneler.expanded">shroomfiber</li>
+						<li MayRequire="error277.tunneler.expanded">shroomfiber_raw</li>
+						<li MayRequire="sarg.alphabiomes">AB_PinkRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_BlueRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+						<li MayRequire="sarg.alphaanimals">AA_AgariluxRawFungus</li>
+						<li MayRequire="sarg.alphaanimals">AA_BlackTruffles</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="RawFungus"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="halloweenparade.velcroboy333">AutumnMushroom</li>
+						<li MayRequire="mlie.fungilite">TSP_FungiFungus</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawMelrotus</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawVanetike</li>
+						<li MayRequire="spoonshortage.nokumushrooms">RawNoku</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawShimmershroom</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawGlowbulb</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed,vanillaexpanded.vcooke">BMT_RawRoyalBracket</li>
+						<li MayRequire="sirmashedpotato.morrowrim">MorrowRim_RawAshFungus</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_RawDulcis</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Glimmerslime</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+						<li MayRequire="brightsideguy.gerzeeexpansion">RawGrungo</li>
+						<li MayRequire="soul.maelstromsminiplants">MaelM_RawGrubgrain</li>
+						<li MayRequire="epicfloor.mycoidcattle">MooshroomMilk</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Blisscap</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Bileceps</li>
+						<li MayRequire="error277.tunneler.expanded">shroomfiber_raw</li>
+						<li MayRequire="sarg.alphabiomes">AB_PinkRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_BlueRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+						<li MayRequire="sarg.alphaanimals">AA_AgariluxRawFungus</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef/comps/li/fuelFilter/thingDefs/li[text()="RawFungus"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="halloweenparade.velcroboy333">AutumnMushroom</li>
+						<li MayRequire="mlie.fungilite">TSP_FungiFungus</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawMelrotus</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawVanetike</li>
+						<li MayRequire="spoonshortage.nokumushrooms">RawNoku</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawShimmershroom</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawGlowbulb</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_BoomSpore</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed,vanillaexpanded.vcooke">BMT_RawRoyalBracket</li>
+						<li MayRequire="sirmashedpotato.morrowrim">MorrowRim_RawAshFungus</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_RawDulcis</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Glimmerslime</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+						<li MayRequire="brightsideguy.gerzeeexpansion">RawGrungo</li>
+						<li MayRequire="soul.maelstromsminiplants">MaelM_RawGrubgrain</li>
+						<li MayRequire="epicfloor.mycoidcattle">MooshroomMilk</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Blisscap</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Bileceps</li>
+						<li MayRequire="sarg.alphabiomes">AB_PinkRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_BlueRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+						<li MayRequire="sarg.alphaanimals">AA_AgariluxRawFungus</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="Darktorch" or defName="DarktorchFungus" or defName="DarklightBrazier" or defName="Stone_DarklightCampfire" or defName="VFEM_DarkCandle" or defName="VFEM_WallTorchDarkLamp" or defName="VFEV_DarkHearth"]/comps/li/fuelFilter/thingDefs</xpath>
+					<value>
+						<li MayRequire="halloweenparade.velcroboy333">AutumnMushroom</li>
+						<li MayRequire="mlie.fungilite">TSP_FungiFungus</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawMelrotus</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawVanetike</li>
+						<li MayRequire="spoonshortage.nokumushrooms">RawNoku</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawShimmershroom</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawGlowbulb</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_BoomSpore</li>
+						<li MayRequire="fluffysminion.itw.caveworldfloraunleashed,vanillaexpanded.vcooke">BMT_RawRoyalBracket</li>
+						<li MayRequire="sirmashedpotato.morrowrim">MorrowRim_RawAshFungus</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_RawDulcis</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Glimmerslime</li>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+						<li MayRequire="brightsideguy.gerzeeexpansion">RawGrungo</li>
+						<li MayRequire="soul.maelstromsminiplants">MaelM_RawGrubgrain</li>
+						<li MayRequire="epicfloor.mycoidcattle">MooshroomMilk</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Blisscap</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Bileceps</li>
+						<li MayRequire="sarg.alphabiomes">AB_PinkRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_BlueRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+						<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+						<li MayRequire="sarg.alphaanimals">AA_AgariluxRawFungus</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="FungusFiredGenerator"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="FungusFiredGenerator"]/comps/li/fuelFilter/thingDefs</xpath>
+			<value>
+				<li MayRequire="halloweenparade.velcroboy333">AutumnMushroom</li>
+				<li MayRequire="mlie.fungilite">TSP_FungiFungus</li>
+				<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawMelrotus</li>
+				<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawVanetike</li>
+				<li MayRequire="spoonshortage.nokumushrooms">RawNoku</li>
+				<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawShimmershroom</li>
+				<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawGlowbulb</li>
+				<li MayRequire="biomesteam.biomescaverns">BMT_BoomSpore</li>
+				<li MayRequire="fluffysminion.itw.caveworldfloraunleashed,vanillaexpanded.vcooke">BMT_RawRoyalBracket</li>
+				<li MayRequire="sirmashedpotato.morrowrim">MorrowRim_RawAshFungus</li>
+				<li MayRequire="biomesteam.biomescaverns">BMT_RawDulcis</li>
+				<li MayRequire="biomesteam.biomescaverns">BMT_Glimmerslime</li>
+				<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+				<li MayRequire="brightsideguy.gerzeeexpansion">RawGrungo</li>
+				<li MayRequire="soul.maelstromsminiplants">MaelM_RawGrubgrain</li>
+				<li MayRequire="epicfloor.mycoidcattle">MooshroomMilk</li>
+				<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Blisscap</li>
+				<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Bileceps</li>
+				<li MayRequire="error277.tunneler.expanded">shroomfiber_raw</li>
+				<li MayRequire="sarg.alphabiomes">AB_PinkRawFungus</li>
+				<li MayRequire="sarg.alphabiomes">AB_BlueRawFungus</li>
+				<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+				<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+				<li MayRequire="sarg.alphaanimals">AA_AgariluxRawFungus</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="FugalCampfire"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="FugalCampfire"]/comps/li/fuelFilter/thingDefs</xpath>
+			<value>
+				<li MayRequire="halloweenparade.velcroboy333">AutumnMushroom</li>
+				<li MayRequire="mlie.fungilite">TSP_FungiFungus</li>
+				<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawMelrotus</li>
+				<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawVanetike</li>
+				<li MayRequire="spoonshortage.nokumushrooms">RawNoku</li>
+				<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawShimmershroom</li>
+				<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawGlowbulb</li>
+				<li MayRequire="biomesteam.biomescaverns">BMT_BoomSpore</li>
+				<li MayRequire="fluffysminion.itw.caveworldfloraunleashed,vanillaexpanded.vcooke">BMT_RawRoyalBracket</li>
+				<li MayRequire="sirmashedpotato.morrowrim">MorrowRim_RawAshFungus</li>
+				<li MayRequire="biomesteam.biomescaverns">BMT_RawDulcis</li>
+				<li MayRequire="biomesteam.biomescaverns">BMT_Glimmerslime</li>
+				<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+				<li MayRequire="brightsideguy.gerzeeexpansion">RawGrungo</li>
+				<li MayRequire="soul.maelstromsminiplants">MaelM_RawGrubgrain</li>
+				<li MayRequire="epicfloor.mycoidcattle">MooshroomMilk</li>
+				<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Blisscap</li>
+				<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Bileceps</li>
+				<li MayRequire="error277.tunneler.expanded">shroomfiber_raw</li>
+				<li MayRequire="sarg.alphabiomes">AB_PinkRawFungus</li>
+				<li MayRequire="sarg.alphabiomes">AB_BlueRawFungus</li>
+				<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+				<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+				<li MayRequire="sarg.alphaanimals">AA_AgariluxRawFungus</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="FungusPassiveCooler"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="FungusPassiveCooler"]/comps/li/fuelFilter/thingDefs</xpath>
+			<value>
+				<li MayRequire="halloweenparade.velcroboy333">AutumnMushroom</li>
+				<li MayRequire="mlie.fungilite">TSP_FungiFungus</li>
+				<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawMelrotus</li>
+				<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">UF_RawVanetike</li>
+				<li MayRequire="spoonshortage.nokumushrooms">RawNoku</li>
+				<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawShimmershroom</li>
+				<li MayRequire="fluffysminion.itw.caveworldfloraunleashed">BMT_RawGlowbulb</li>
+				<li MayRequire="biomesteam.biomescaverns">BMT_BoomSpore</li>
+				<li MayRequire="fluffysminion.itw.caveworldfloraunleashed,vanillaexpanded.vcooke">BMT_RawRoyalBracket</li>
+				<li MayRequire="sirmashedpotato.morrowrim">MorrowRim_RawAshFungus</li>
+				<li MayRequire="biomesteam.biomescaverns">BMT_RawDulcis</li>
+				<li MayRequire="biomesteam.biomescaverns">BMT_Glimmerslime</li>
+				<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+				<li MayRequire="biomesteam.biomescaverns">BMT_Starchstalk</li>
+				<li MayRequire="brightsideguy.gerzeeexpansion">RawGrungo</li>
+				<li MayRequire="soul.maelstromsminiplants">MaelM_RawGrubgrain</li>
+				<li MayRequire="epicfloor.mycoidcattle">MooshroomMilk</li>
+				<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Blisscap</li>
+				<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Bileceps</li>
+				<li MayRequire="error277.tunneler.expanded">shroomfiber_raw</li>
+				<li MayRequire="sarg.alphabiomes">AB_PinkRawFungus</li>
+				<li MayRequire="sarg.alphabiomes">AB_BlueRawFungus</li>
+				<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+				<li MayRequire="sarg.alphabiomes">AB_PurpleRawFungus</li>
+				<li MayRequire="sarg.alphaanimals">AA_AgariluxRawFungus</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

@@ -2,13 +2,13 @@
 <Defs>
   <TraderKindDef>
     <defName>Visitor_Fungi_Standard</defName>
-    <label>trader</label>
+    <label>shroomimal dealer</label>
     <stockGenerators>
       <li Class="StockGenerator_SingleDef">
         <thingDef>Silver</thingDef>
         <countRange>
-          <min>200</min>
-          <max>400</max>
+          <min>4200</min>
+          <max>4400</max>
         </countRange>
       </li>
       <li Class="StockGenerator_Animals">
@@ -16,21 +16,30 @@
           <li>FungiTrade_Shroomimal</li>
         </tradeTagsSell>
         <tradeTagsBuy>
-          <li>AnimalUncommon</li>
-          <li>AnimalExotic</li>
-          <li>FungiTrade_Shroomimal</li>
+			<li>FungiTrade_Shroomimal</li>
+			<li>AnimalEvilFungus</li>
+			<li>AnimalCommon</li>
+			<li>AnimalUncommon</li>
+			<li>AnimalRare</li>
+			<li>AnimalExotic</li>
+			<li>AnimalInsect</li>
+			<li>AnimalExotic_Anima</li>
+			<li>AnimalFighter</li>
+			<li>AnimalFarm</li>
+			<li>StorytimeAnimal</li>
+			<li>AnimalFrog</li>
         </tradeTagsBuy>
         <kindCountRange>1~3</kindCountRange>
-        <countRange>1~4</countRange>
+        <countRange>1~14</countRange>
       </li>
       <li Class="StockGenerator_Category">
         <categoryDef>FoodMeals</categoryDef>
         <thingDefCountRange>
           <min>1</min>
-          <max>2</max>
+          <max>12</max>
         </thingDefCountRange>
         <countRange>
-          <min>0</min>
+          <min>1</min>
           <max>3</max>
         </countRange>
       </li>
@@ -38,11 +47,11 @@
         <tradeTag>WeaponRanged</tradeTag>
         <countRange>
           <min>0</min>
-          <max>2</max>
+          <max>1</max>
         </countRange>
       </li>
       <li Class="StockGenerator_Category">
-        <maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
+        <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
         <categoryDef>WeaponsMelee</categoryDef>
         <countRange>
           <min>0</min>
@@ -51,13 +60,13 @@
       </li>
       <li Class="StockGenerator_Category">
         <categoryDef>Drugs</categoryDef>
-        <maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
+        <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
         <thingDefCountRange>
           <min>-1</min>
           <max>2</max>
         </thingDefCountRange>
         <totalPriceRange>
-          <min>200</min>
+          <min>450</min>
           <max>500</max>
         </totalPriceRange>
       </li>
@@ -72,6 +81,7 @@
         <thingDefs>
           <li>Cloth</li>
           <li>Chocolate</li>
+		  <li>RawFungus</li>
         </thingDefs>
       </li>
     </stockGenerators>

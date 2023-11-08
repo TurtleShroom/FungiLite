@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional" MayRequire="vanillaracesexpanded.fungoid">
+	<!-- Does this exist? -->
+		<xpath>/Defs/PawnKindDef[defName="VRE_AncientFungoid"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs</xpath>
+			<value>
+				<PawnKindDef ParentName="FungiBase">
+					<defName>TSP_VFEF_FakeFungi</defName>
+					<label>lost fungal Xeno-Human</label>
+					<defaultFactionType>FungiFaction</defaultFactionType>
+					<combatPower>60</combatPower>
+					<race Inherit="False">Human</race> <!-- May incorporate Fungi as this Xenotype if possible -->
+					<xenotypeSet Inherit="False" MayRequire="vanillaracesexpanded.fungoid">
+						<xenotypeChances Inherit="False" MayRequire="vanillaracesexpanded.fungoid">
+							<VRE_Fungoid MayRequire="vanillaracesexpanded.fungoid">999</VRE_Fungoid>
+						</xenotypeChances>
+					</xenotypeSet>
+					<backstoryCategories Inherit="False">
+						<li>Vatgrown</li>
+						<li>VatGrown</li>
+						<li>Tribal</li>
+						<li MayRequire="zal.folia">DeathkapFactionBackstories</li>
+					</backstoryCategories>
+					<useFactionXenotypes>false</useFactionXenotypes>
+					<apparelMoney>200~700</apparelMoney>
+					<itemQuality>Poor</itemQuality>
+					<chemicalAddictionChance>0.2</chemicalAddictionChance>
+					<invFoodDef>MealFine_Meat</invFoodDef>
+					<!--
+					<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+					<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">false</apparelIgnorePollution>
+					-->
+					<minGenerationAge>22</minGenerationAge>
+					<maxGenerationAge>30</maxGenerationAge>
+					<initialWillRange>2~4</initialWillRange>
+					<initialResistanceRange>8~16</initialResistanceRange>
+				</PawnKindDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>

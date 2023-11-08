@@ -3,7 +3,7 @@
   <HediffDef>
     <defName>Fungi_hediff_Spores</defName>
     <label>&lt;color=#9430ab&gt;Flesh eating spores &lt;/color&gt;</label>
-    <description>Flesh eating Spores attack the brain and body and let it rot. Causes sometimes dementia</description>
+    <description>Flesh eating Spores attack the brain and body and let it rot. Causes sometimes dementia.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
     <lethalSeverity>1</lethalSeverity>
@@ -107,7 +107,7 @@
         <hediffGivers>
           <li Class="HediffGiver_Random">
             <hediff>Dementia</hediff>
-            <mtbDays>2</mtbDays>
+            <mtbDays>3.25</mtbDays>
             <partsToAffect>
               <li>Brain</li>
             </partsToAffect>

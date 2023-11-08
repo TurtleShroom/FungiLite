@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="BMT_Leather_Mushroom"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[defName = "FungiFaction" or defName = "FungiPlayerTribe"]/apparelStuffFilter</xpath>
+			<value>
+				<apparelStuffFilter>
+					<thingDefs>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Leather_Mushroom</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Mycothread</li>
+						<li MayRequire="error277.tunneler.expanded">shroomfiber_raw</li>
+						<li MayRequire="error277.tunneler.expanded">shroomfiber</li>
+						<li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+					</thingDefs>
+				</apparelStuffFilter>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VPE_Mycothread"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[defName = "FungiFaction" or defName = "FungiPlayerTribe"]/apparelStuffFilter</xpath>
+			<value>
+				<apparelStuffFilter>
+					<thingDefs>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Leather_Mushroom</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Mycothread</li>
+						<li MayRequire="error277.tunneler.expanded">shroomfiber_raw</li>
+						<li MayRequire="error277.tunneler.expanded">shroomfiber</li>
+						<li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+					</thingDefs>
+				</apparelStuffFilter>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="shroomfiber"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[defName = "FungiFaction" or defName = "FungiPlayerTribe"]/apparelStuffFilter</xpath>
+			<value>
+				<apparelStuffFilter>
+					<thingDefs>
+						<li MayRequire="biomesteam.biomescaverns">BMT_Leather_Mushroom</li>
+						<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Mycothread</li>
+						<li MayRequire="error277.tunneler.expanded">shroomfiber_raw</li>
+						<li MayRequire="error277.tunneler.expanded">shroomfiber</li>
+						<li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+					</thingDefs>
+				</apparelStuffFilter>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

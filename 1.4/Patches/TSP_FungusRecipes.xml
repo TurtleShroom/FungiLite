@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="BMT_MushroomWine"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
+		<match Class="PatchOperationSequence">
+			<!-- <success>Always</success> -->
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName="BMT_MakeMushroomMust"]/ingredients/li/filter/thingDefs</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.fungilite">TSP_FungiFungus</li>
+						<li MayRequire="sarg.alphaanimals">AA_AgariluxRawFungus</li>
+						<li MayRequire="sarg.alphaanimals">AA_BlackTruffles</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName="BMT_MakeMushroomMust"]/fixedIngredientFilter/thingDefs</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.fungilite">TSP_FungiFungus</li>
+						<li MayRequire="sarg.alphaanimals">AA_AgariluxRawFungus</li>
+						<li MayRequire="sarg.alphaanimals">AA_BlackTruffles</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>
