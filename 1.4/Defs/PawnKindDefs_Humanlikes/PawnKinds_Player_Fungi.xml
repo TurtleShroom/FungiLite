@@ -10,12 +10,12 @@
     <forceNormalGearQuality>true</forceNormalGearQuality>
     <minGenerationAge>9</minGenerationAge>
     <maxGenerationAge>12</maxGenerationAge>
-	<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
   </PawnKindDef>
   <PawnKindDef ParentName="BasePlayerFungiPawnKind">
     <defName>PlayerFungi</defName>
     <label>fungus</label>
-	<labelPlural>fungi</labelPlural>
+    <labelPlural>fungi</labelPlural>
     <defaultFactionType>PlayerColony</defaultFactionType>
     <backstoryCategories>
       <li>Tribal</li>
@@ -23,7 +23,7 @@
     <chemicalAddictionChance>0.03</chemicalAddictionChance>
     <apparelTags>
       <li>Neolithic</li>
-	  <li>Tribal</li>
+      <li>Tribal</li>
     </apparelTags>
     <apparelMoney>
       <min>200</min>

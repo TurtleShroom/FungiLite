@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
   <FactionDef Parent="FactionBase">
     <defName>FungiFaction</defName>
@@ -7,7 +6,7 @@
     <description>Weird looking humans that resemble mushrooms!</description>
     <pawnSingular>Fungi</pawnSingular>
     <pawnsPlural>Fungi</pawnsPlural>
-	<basicMemberKind>FungiMelee</basicMemberKind>
+    <basicMemberKind>FungiMelee</basicMemberKind>
     <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
@@ -32,25 +31,25 @@
         </categories>
         <commonality>0.33</commonality>
       </li>
-	  <li>
+      <li>
         <categories>
           <li>Farmer</li>
         </categories>
         <commonality>0.19</commonality>
       </li>
-	  <li>
-		<categories>
-			<li>Vatgrown</li>
-			<li>VatGrown</li>
-		</categories>
-		<commonality>0.11</commonality>
-	  </li>
-	  <li MayRequire="zal.folia">
-		<categories MayRequire="zal.folia">
-			<li MayRequire="zal.folia">DeathkapFactionBackstories</li>
-		</categories>
-		<commonality MayRequire="zal.folia">0.09</commonality>
-	  </li>
+      <li>
+        <categories>
+          <li>Vatgrown</li>
+          <li>VatGrown</li>
+        </categories>
+        <commonality>0.11</commonality>
+      </li>
+      <li MayRequire="zal.folia">
+        <categories MayRequire="zal.folia">
+          <li MayRequire="zal.folia">DeathkapFactionBackstories</li>
+        </categories>
+        <commonality MayRequire="zal.folia">0.09</commonality>
+      </li>
     </backstoryFilters>
     <allowedCultures>
       <li>Corunan</li>
@@ -58,52 +57,53 @@
     <apparelStuffFilter>
       <thingDefs>
         <li>Leather_Patch</li>
-		<li>DevilstrandCloth</li>
-		<li MayRequire="biomesteam.biomescaverns">BMT_Leather_Mushroom</li>
-		<li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Mycothread</li>
-		<li MayRequire="error277.tunneler.expanded">shroomfiber_raw</li>
-		<li MayRequire="error277.tunneler.expanded">shroomfiber</li>
-		<li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
-		<li MayRequire="mlie.ancientrimcore">AR_Bronze</li>
+        <li>DevilstrandCloth</li>
+        <li MayRequire="biomesteam.biomescaverns">BMT_Leather_Mushroom</li>
+        <li MayRequire="vanillaexpanded.vplantsemushrooms">VPE_Mycothread</li>
+        <li MayRequire="error277.tunneler.expanded">shroomfiber_raw</li>
+        <li MayRequire="error277.tunneler.expanded">shroomfiber</li>
+        <li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+        <li MayRequire="mlie.ancientrimcore">AR_Bronze</li>
       </thingDefs>
     </apparelStuffFilter>
     <leaderTitle>Ancient One</leaderTitle>
-	<disallowedMemes>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
-	</disallowedMemes>
-	<disallowedPrecepts>
-		<!-- Former slaves, will NEVER condone slavery -->
-		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
-		
-		<!-- Engineered to like eating fungi -->
-		<li MayRequire="Ludeon.RimWorld.Ideology">FungusEating_Despised</li>
-
-		<!-- Have forgiven mankind, requires the appropriate Mod -->
-		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Abhorrent</li>
-		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Horrible</li>
-		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Disapproved</li>
-	</disallowedPrecepts>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+    </disallowedMemes>
+    <disallowedPrecepts>
+      <!-- Former slaves, will NEVER condone slavery -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+      <!-- Engineered to like eating fungi -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">FungusEating_Despised</li>
+      <!-- Have forgiven mankind, requires the appropriate Mod -->
+      <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Abhorrent</li>
+      <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Horrible</li>
+      <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Disapproved</li>
+    </disallowedPrecepts>
     <caravanTraderKinds>
-		<li>Caravan_Neolithic_BulkGoods</li>
-		<li>Caravan_Neolithic_WarMerchant</li>
-		<li>Caravan_Neolithic_ShamanMerchant</li>
-		<li>Visitor_Fungi_Standard</li> <!-- Changed to normal Trader Kind Def -->
-		<li MayRequire="zhrocks11.letstrade">Caravan_Outlander_Archeological</li>
-		<li MayRequire="zhrocks11.letstrade">Caravan_Neolithic_Odd</li>
-		<li MayRequire="zhrocks11.letstrade">Caravan_Neolithic_Textiles</li>
+      <li>Caravan_Neolithic_BulkGoods</li>
+      <li>Caravan_Neolithic_WarMerchant</li>
+      <li>Caravan_Neolithic_ShamanMerchant</li>
+      <li>Visitor_Fungi_Standard</li>
+      <!-- Changed to normal Trader Kind Def -->
+      <li MayRequire="zhrocks11.letstrade">Caravan_Outlander_Archeological</li>
+      <li MayRequire="zhrocks11.letstrade">Caravan_Neolithic_Odd</li>
+      <li MayRequire="zhrocks11.letstrade">Caravan_Neolithic_Textiles</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
-      <!-- <li>Visitor_Fungi_Standard</li> --> <!-- Visitors can't bring Animal Pawn Kind Defs to sell, it causes errors -->
-	  <li>Visitor_Outlander_Standard</li>
+      <!-- <li>Visitor_Fungi_Standard</li> -->
+      <!-- Visitors can't bring Animal Pawn Kind Defs to sell, it causes errors -->
+      <li>Visitor_Outlander_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
       <li>Base_Neolithic_Standard</li>
-	  <li>Visitor_Fungi_Standard</li> <!-- Changed to normal Trader Kind Def -->
+      <li>Visitor_Fungi_Standard</li>
+      <!-- Changed to normal Trader Kind Def -->
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>
       <min>-100</min>
@@ -121,20 +121,20 @@
     <pawnGroupMakers>
       <li>
         <kindDef>Peaceful</kindDef>
-		<commonality>100</commonality>
+        <commonality>100</commonality>
         <options>
           <FungiMelee>15</FungiMelee>
           <FungiRanged>10</FungiRanged>
           <FungiChief>3</FungiChief>
-		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">4</TSP_VFEF_FakeFungi>
+          <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">4</TSP_VFEF_FakeFungi>
         </options>
       </li>
       <li MayRequire="vanillaracesexpanded.fungoid">
         <kindDef MayRequire="vanillaracesexpanded.fungoid">Peaceful</kindDef>
         <options MayRequire="vanillaracesexpanded.fungoid">
-		<commonality MayRequire="vanillaracesexpanded.fungoid">20</commonality>
-          <FungiChief  MayRequire="vanillaracesexpanded.fungoid">0.5</FungiChief>
-		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">4</TSP_VFEF_FakeFungi>
+          <commonality MayRequire="vanillaracesexpanded.fungoid">20</commonality>
+          <FungiChief MayRequire="vanillaracesexpanded.fungoid">0.5</FungiChief>
+          <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">4</TSP_VFEF_FakeFungi>
         </options>
       </li>
       <li>
@@ -145,8 +145,8 @@
           <FungiMelee>25</FungiMelee>
           <FungiRanged>15</FungiRanged>
           <FungiChief>5</FungiChief>
-		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">4</TSP_VFEF_FakeFungi>
-		  <FunnyFungus MayRequire="halloweenparade.velcroboy333">5</FunnyFungus>
+          <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">4</TSP_VFEF_FakeFungi>
+          <FunnyFungus MayRequire="halloweenparade.velcroboy333">5</FunnyFungus>
         </options>
       </li>
       <li>
@@ -155,7 +155,7 @@
         <commonality>40</commonality>
         <options>
           <Shroomimal>999</Shroomimal>
-		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">1</TSP_VFEF_FakeFungi>
+          <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">1</TSP_VFEF_FakeFungi>
         </options>
       </li>
       <li MayRequire="halloweenparade.velcroboy333">
@@ -164,7 +164,7 @@
         <commonality MayRequire="halloweenparade.velcroboy333">30</commonality>
         <options MayRequire="halloweenparade.velcroboy333">
           <FunnyFungus MayRequire="halloweenparade.velcroboy333">999</FunnyFungus>
-		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid,halloweenparade.velcroboy333">1</TSP_VFEF_FakeFungi>
+          <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid,halloweenparade.velcroboy333">1</TSP_VFEF_FakeFungi>
         </options>
       </li>
       <li MayRequire="vanillaracesexpanded.fungoid">
@@ -172,7 +172,7 @@
         <kindDef MayRequire="vanillaracesexpanded.fungoid">Combat</kindDef>
         <commonality MayRequire="vanillaracesexpanded.fungoid">40</commonality>
         <options MayRequire="vanillaracesexpanded.fungoid">
-		  <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">999</TSP_VFEF_FakeFungi>
+          <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">999</TSP_VFEF_FakeFungi>
         </options>
       </li>
       <li>
@@ -181,42 +181,42 @@
           <FungiTrader>1</FungiTrader>
         </traders>
         <carriers>
-			<Muffalo>1</Muffalo>
-			<Dromedary>25</Dromedary>
-			<Alpaca>1</Alpaca>
-			<Reaper MayRequire="halloweenparade.velcroboy333">1</Reaper>
-			<Scarecrow MayRequire="halloweenparade.velcroboy333">10</Scarecrow>
+          <Muffalo>1</Muffalo>
+          <Dromedary>25</Dromedary>
+          <Alpaca>1</Alpaca>
+          <Reaper MayRequire="halloweenparade.velcroboy333">1</Reaper>
+          <Scarecrow MayRequire="halloweenparade.velcroboy333">10</Scarecrow>
         </carriers>
         <guards>
-			<FungiMelee>12</FungiMelee>
-			<FungiRanged>7</FungiRanged>
-			<TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">5</TSP_VFEF_FakeFungi>
-			<Shroomimal>20</Shroomimal>
-			<FunnyFungus MayRequire="halloweenparade.velcroboy333">15</FunnyFungus>
-			<!--
+          <FungiMelee>12</FungiMelee>
+          <FungiRanged>7</FungiRanged>
+          <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">5</TSP_VFEF_FakeFungi>
+          <Shroomimal>20</Shroomimal>
+          <FunnyFungus MayRequire="halloweenparade.velcroboy333">15</FunnyFungus>
+          <!--
 			<Mercenary_Slasher>3</Mercenary_Slasher>
 			<Mercenary_Gunner>1</Mercenary_Gunner>
 			<Mercenary_Elite>1</Mercenary_Elite>
 			-->
         </guards>
       </li>
-		<li MayRequire="halloweenparade.velcroboy333">
-			<kindDef MayRequire="halloweenparade.velcroboy333">Combat</kindDef>
-			<commonality  MayRequire="halloweenparade.velcroboy333">20</commonality>
-			<options MayRequire="halloweenparade.velcroboy333">
-				<FunnyFungus MayRequire="halloweenparade.velcroboy333">500</FunnyFungus>
-				<Shroomimal MayRequire="halloweenparade.velcroboy333">100</Shroomimal>
-			</options>
-		</li>
+      <li MayRequire="halloweenparade.velcroboy333">
+        <kindDef MayRequire="halloweenparade.velcroboy333">Combat</kindDef>
+        <commonality MayRequire="halloweenparade.velcroboy333">20</commonality>
+        <options MayRequire="halloweenparade.velcroboy333">
+          <FunnyFungus MayRequire="halloweenparade.velcroboy333">500</FunnyFungus>
+          <Shroomimal MayRequire="halloweenparade.velcroboy333">100</Shroomimal>
+        </options>
+      </li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-			<FungiMelee>35</FungiMelee>
-			<FungiRanged>30</FungiRanged>
-			<FungiChief>20</FungiChief>
-			<Shroomimal>15</Shroomimal>
-			<TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">7</TSP_VFEF_FakeFungi>
-			<FunnyFungus MayRequire="halloweenparade.velcroboy333">15</FunnyFungus>
+          <FungiMelee>35</FungiMelee>
+          <FungiRanged>30</FungiRanged>
+          <FungiChief>20</FungiChief>
+          <Shroomimal>15</Shroomimal>
+          <TSP_VFEF_FakeFungi MayRequire="vanillaracesexpanded.fungoid">7</TSP_VFEF_FakeFungi>
+          <FunnyFungus MayRequire="halloweenparade.velcroboy333">15</FunnyFungus>
         </options>
       </li>
     </pawnGroupMakers>
@@ -229,11 +229,11 @@
         <li>(4000, 1000)</li>
       </points>
     </raidLootValueFromPointsCurve>
-	<modExtensions>
-		<li Class="VFEEmpire.FactionExtension_Deserters" MayRequire="oskarpotocki.vfe.empire">
-			<canSendDeserters MayRequire="oskarpotocki.vfe.empire">true</canSendDeserters>
-			<deserterKind MayRequire="oskarpotocki.vfe.empire">TSP_VFEE_TraitorFungusAmongUs</deserterKind>
-		</li>
-	</modExtensions>
+    <modExtensions>
+      <li Class="VFEEmpire.FactionExtension_Deserters" MayRequire="oskarpotocki.vfe.empire">
+        <canSendDeserters MayRequire="oskarpotocki.vfe.empire">true</canSendDeserters>
+        <deserterKind MayRequire="oskarpotocki.vfe.empire">TSP_VFEE_TraitorFungusAmongUs</deserterKind>
+      </li>
+    </modExtensions>
   </FactionDef>
 </Defs>

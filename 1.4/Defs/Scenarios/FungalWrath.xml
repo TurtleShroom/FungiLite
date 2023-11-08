@@ -18,7 +18,7 @@
         <li Class="ScenPart_PlayerPawnsArriveMethod">
           <def>PlayerPawnsArriveMethod</def>
         </li>
-		<!--
+        <!--
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Silver</thingDef>
@@ -56,7 +56,7 @@
           <thingDef>WoodLog</thingDef>
           <count>800</count>
         </li>
-		<!--
+        <!--
         <li Class="ScenPart_ScatterThingsAnywhere">
           <def>ScatterThingsAnywhere</def>
           <thingDef>Steel</thingDef>
@@ -84,7 +84,7 @@
           <def>StartingResearch</def>
           <project>Stonecutting</project>
         </li>
-		<!--
+        <!--
         <li Class="ScenPart_StartingResearch" MayRequire="biomesteam.biomescaverns">
           <def MayRequire="biomesteam.biomescaverns">StartingResearch</def>
           <project MayRequire="biomesteam.biomescaverns">BMT_ResearchMushrooms</project>

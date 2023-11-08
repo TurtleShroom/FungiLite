@@ -3,8 +3,8 @@
   <PawnKindDef Name="FungiBase" Abstract="True">
     <defaultFactionType>FungiFaction</defaultFactionType>
     <race>Alien_Fungi</race>
-	<!-- Now governed by Faction -->
-	<!--
+    <!-- Now governed by Faction -->
+    <!--
     <backstoryCategories>
       <li>Tribal</li>
 	  <li MayRequire="zal.folia">DeathkapFactionBackstories</li>
@@ -17,20 +17,20 @@
     <invFoodDef>RawFungus</invFoodDef>
     <minGenerationAge>9</minGenerationAge>
     <maxGenerationAge>12</maxGenerationAge>
-	<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-	<apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
     <apparelTags>
       <li>Tribal</li>
     </apparelTags>
-	<weaponTags>
-		<li>Lance</li>
-	</weaponTags>
+    <weaponTags>
+      <li>Lance</li>
+    </weaponTags>
   </PawnKindDef>
   <PawnKindDef Name="FungiMelee" Parentname="FungiBase">
     <defName>FungiMelee</defName>
     <label>Fungi fighter</label>
     <race>Alien_Fungi</race>
-	<!--
+    <!--
     <backstoryCategories>
       <li>Tribal</li>
     </backstoryCategories>
@@ -55,9 +55,9 @@
     <weaponTags>
       <li>NeolithicMeleeDecent</li>
       <li>NeolithicMeleeAdvanced</li>
-	  <li>Spear</li>
-	  <li>SpearMen</li>
-	  <li>Lance</li>
+      <li>Spear</li>
+      <li>SpearMen</li>
+      <li>Lance</li>
     </weaponTags>
   </PawnKindDef>
   <PawnKindDef Parentname="FungiMelee">
@@ -65,7 +65,7 @@
     <label>keeper</label>
     <trader>true</trader>
     <race>Alien_Fungi</race>
-	<!--
+    <!--
     <backstoryCategories>
       <li>Tribal</li>
     </backstoryCategories>
@@ -92,7 +92,7 @@
     <weaponTags>
       <li>NeolithicMeleeAdvanced</li>
       <li>NeolithicRangedBasic</li>
-	  <li>Lance</li>
+      <li>Lance</li>
     </weaponTags>
   </PawnKindDef>
   <PawnKindDef Name="FungiRanged" Parentname="FungiBase">
@@ -100,7 +100,7 @@
     <label>fungal needler</label>
     <race>Alien_Fungi</race>
     <defaultFactionType>FungiFaction</defaultFactionType>
-	<!--
+    <!--
     <backstoryCategories>
       <li>Tribal</li>
     </backstoryCategories>
@@ -126,14 +126,14 @@
     </weaponMoney>
     <weaponTags>
       <li>NeolithicRangedBasic</li>
-	  <li>BowMen</li>
+      <li>BowMen</li>
     </weaponTags>
   </PawnKindDef>
   <PawnKindDef Parentname="FungiBase">
     <defName>FungiChief</defName>
     <label>primogenitor</label>
     <race>Alien_Fungi</race>
-	<!--
+    <!--
     <backstoryCategories>
       <li>Tribal</li>
     </backstoryCategories>
@@ -160,18 +160,17 @@
     <weaponTags>
       <li>NeolithicMeleeAdvanced</li>
       <li>NeolithicRangedChief</li>
-	  <li>Lance</li>
+      <li>Lance</li>
     </weaponTags>
   </PawnKindDef>
-  
-  <PawnKindDef Name="FungiMelee" Parentname="FungiBase">
+  <PawnKindDef Parentname="FungiBase">
     <defName>TSP_FungiSlave</defName>
     <label>vat grown Fungi slave</label>
     <race>Alien_Fungi</race>
     <backstoryCategories Inherit="False">
-		<li MayRequire="zal.folia">DeathkapFactionBackstories</li>
-		<li>Vatgrown</li>
-		<li>VatGrown</li>
+      <li MayRequire="zal.folia">DeathkapFactionBackstories</li>
+      <li>Vatgrown</li>
+      <li>VatGrown</li>
     </backstoryCategories>
     <combatPower>48</combatPower>
     <minGenerationAge>2</minGenerationAge>
@@ -191,9 +190,9 @@
       <max>450</max>
     </weaponMoney>
     <weaponTags>
-		<li>NeolithicMeleeBasic</li>
-		<li>Knife</li>
-		<li>Toolagri</li>
+      <li>NeolithicMeleeBasic</li>
+      <li>Knife</li>
+      <li>Toolagri</li>
     </weaponTags>
   </PawnKindDef>
 </Defs>
