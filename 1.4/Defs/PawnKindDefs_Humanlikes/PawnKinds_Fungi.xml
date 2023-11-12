@@ -164,7 +164,7 @@
     </weaponTags>
   </PawnKindDef>
   
-  <PawnKindDef Name="FungiMelee" Parentname="FungiBase">
+  <PawnKindDef Name="FungiVatGrown" Parentname="FungiMelee">
     <defName>TSP_FungiSlave</defName>
     <label>vat grown Fungi slave</label>
     <race>Alien_Fungi</race>
