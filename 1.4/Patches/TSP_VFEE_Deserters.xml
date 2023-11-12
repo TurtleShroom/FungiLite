@@ -1,75 +1,74 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/PawnKindDef[defName="VFEE_Deserter"]</xpath>
-		<!-- If it does, add this. -->
-		<match Class="PatchOperationAdd">
-			<success>Always</success>
-			<xpath>/Defs</xpath>
-			<value>
-				<PawnKindDef ParentName="VFEE_DeserterBase">
-					<defName>TSP_VFEE_TraitorFungusAmongUs</defName>
-					<race Inherit="False">Alien_Fungi</race>
-					<label>Fungi hitman</label>
-					<labelPlural>Fungi hitmen</labelPlural>
-					<combatPower>100</combatPower>
-					<chemicalAddictionChance>0.15</chemicalAddictionChance>
-					<combatEnhancingDrugsChance>0.75</combatEnhancingDrugsChance>
-					<combatEnhancingDrugsCount>1~5</combatEnhancingDrugsCount>
-					<weaponTags Inherit="False">
-						<li>Lance</li>
-						<li>SpearMen</li>
-						<li>MedievalMeleeDecent</li>
-						<li>SimpleGun</li>
-						<li>Revolver</li>
-						<li>WoodBeet</li>
-					</weaponTags>
-					<apparelTags>
-						<li>Tribal</li>
-						<li>Medieval</li>
-						<li>MedievalApparelBasic</li>
-						<li>MedievalBasic</li>
-						<li>MedievalAdvanced</li>
-						<li>Barbarian</li>
-						<li>Cape</li>
-					</apparelTags>
-					<apparelRequired>
-						<li MayRequire="tsp.isengriff.storytime">PirateBandana</li>
-						<li>VFEE_Apparel_ArmorDeserter</li>
-					</apparelRequired>
-					<techHediffsTags>
-						<li>Advanced</li>
-						<li>ImplantEmpireCommon</li>
-					</techHediffsTags>
-					<disallowedTraits>
-						<li>Wimp</li>
-						<li>Nudist</li>
-						<li>BodyPurist</li>
-					</disallowedTraits>
-					<skills>
-						<li>
-							<skill>Shooting</skill>
-							<range>8~12</range>
-						</li>
-						<li>
-							<skill>Melee</skill>
-							<range>8~12</range>
-						</li>
-					</skills>
-					<inventoryOptions>
-						<subOptionsChooseOne>
-							<li MayRequire="tsp.isengriff.storytime">
-								<thingDef MayRequire="tsp.isengriff.storytime">GoblinCrack</thingDef>
-								<countRange MayRequire="tsp.isengriff.storytime">4~12</countRange>
-							</li>
-						</subOptionsChooseOne>
-					</inventoryOptions>
-					<initialWillRange>3~7</initialWillRange>
-					<initialResistanceRange>7~16</initialResistanceRange>
-				</PawnKindDef>
-			</value>
-		</match>
-	</Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/PawnKindDef[defName="VFEE_Deserter"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs</xpath>
+      <value>
+        <PawnKindDef ParentName="VFEE_DeserterBase">
+          <defName>TSP_VFEE_TraitorFungusAmongUs</defName>
+          <race Inherit="False">Alien_Fungi</race>
+          <label>Fungi hitman</label>
+          <labelPlural>Fungi hitmen</labelPlural>
+          <combatPower>100</combatPower>
+          <chemicalAddictionChance>0.15</chemicalAddictionChance>
+          <combatEnhancingDrugsChance>0.75</combatEnhancingDrugsChance>
+          <combatEnhancingDrugsCount>1~5</combatEnhancingDrugsCount>
+          <weaponTags Inherit="False">
+            <li>Lance</li>
+            <li>SpearMen</li>
+            <li>MedievalMeleeDecent</li>
+            <li>SimpleGun</li>
+            <li>Revolver</li>
+            <li>WoodBeet</li>
+          </weaponTags>
+          <apparelTags>
+            <li>Tribal</li>
+            <li>Medieval</li>
+            <li>MedievalApparelBasic</li>
+            <li>MedievalBasic</li>
+            <li>MedievalAdvanced</li>
+            <li>Barbarian</li>
+            <li>Cape</li>
+          </apparelTags>
+          <apparelRequired>
+            <li MayRequire="tsp.isengriff.storytime">PirateBandana</li>
+            <li>VFEE_Apparel_ArmorDeserter</li>
+          </apparelRequired>
+          <techHediffsTags>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+          </techHediffsTags>
+          <disallowedTraits>
+            <li>Wimp</li>
+            <li>Nudist</li>
+            <li>BodyPurist</li>
+          </disallowedTraits>
+          <skills>
+            <li>
+              <skill>Shooting</skill>
+              <range>8~12</range>
+            </li>
+            <li>
+              <skill>Melee</skill>
+              <range>8~12</range>
+            </li>
+          </skills>
+          <inventoryOptions>
+            <subOptionsChooseOne>
+              <li MayRequire="tsp.isengriff.storytime">
+                <thingDef MayRequire="tsp.isengriff.storytime">GoblinCrack</thingDef>
+                <countRange MayRequire="tsp.isengriff.storytime">4~12</countRange>
+              </li>
+            </subOptionsChooseOne>
+          </inventoryOptions>
+          <initialWillRange>3~7</initialWillRange>
+          <initialResistanceRange>7~16</initialResistanceRange>
+        </PawnKindDef>
+      </value>
+    </match>
+  </Operation>
 </Patch>

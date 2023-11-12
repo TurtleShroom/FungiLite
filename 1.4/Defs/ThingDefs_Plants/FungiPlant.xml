@@ -7,42 +7,44 @@
     <statBases>
       <MaxHitPoints>120</MaxHitPoints>
       <Nutrition>0.3</Nutrition>
-	  <Beauty>-2</Beauty>
+      <Beauty>-2</Beauty>
     </statBases>
     <graphicData>
       <texPath>FungiPlant/Plant</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
-	<passability>Standable</passability>
+    <passability>Standable</passability>
     <pathCost>2</pathCost>
-    <ingestible></ingestible>
+    <ingestible>
+    </ingestible>
     <plant>
-		<sowResearchPrerequisites></sowResearchPrerequisites>
-		<growDays>13</growDays>
-		<dieIfLeafless>true</dieIfLeafless>
-		<harvestTag>Standard</harvestTag>
-		<harvestedThingDef>TSP_FungiFungus</harvestedThingDef>
-		<harvestYield>100</harvestYield>
-		<sowMinSkill>10</sowMinSkill>
-		<harvestFailable>false</harvestFailable>
-		<harvestMinGrowth>0.98</harvestMinGrowth>
-		<harvestWork>1800</harvestWork>
-		<sowTags>
-			<li>Ground</li>
-			<li>Hydroponic</li>
-			<li>BMT_Fungiponics</li>
-			<li>VPE_Mushroom</li>
-		</sowTags>
-		<growMinGlow>0</growMinGlow>
-		<growOptimalGlow>0.55</growOptimalGlow>
-		<topWindExposure>0.1</topWindExposure>
-		<immatureGraphicPath>FungiPlant/Immature</immatureGraphicPath>
-		<visualSizeRange>0.35~2</visualSizeRange>
-		<fertilityMin>0.01</fertilityMin>
-		<wildOrder>2</wildOrder>
-		<purpose>Health</purpose>
-		<burnedThingDef>Corpse_Alien_Fungi</burnedThingDef>
+      <sowResearchPrerequisites>
+      </sowResearchPrerequisites>
+      <growDays>13</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>TSP_FungiFungus</harvestedThingDef>
+      <harvestYield>100</harvestYield>
+      <sowMinSkill>10</sowMinSkill>
+      <harvestFailable>false</harvestFailable>
+      <harvestMinGrowth>0.98</harvestMinGrowth>
+      <harvestWork>1800</harvestWork>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+        <li>BMT_Fungiponics</li>
+        <li>VPE_Mushroom</li>
+      </sowTags>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0.55</growOptimalGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <immatureGraphicPath>FungiPlant/Immature</immatureGraphicPath>
+      <visualSizeRange>0.35~2</visualSizeRange>
+      <fertilityMin>0.01</fertilityMin>
+      <wildOrder>2</wildOrder>
+      <purpose>Health</purpose>
+      <burnedThingDef>Corpse_Alien_Fungi</burnedThingDef>
     </plant>
     <comps>
       <li Class="CompPawnGrower.CompProperties_PawnGrower">

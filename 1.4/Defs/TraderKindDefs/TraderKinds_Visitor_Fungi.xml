@@ -16,18 +16,18 @@
           <li>FungiTrade_Shroomimal</li>
         </tradeTagsSell>
         <tradeTagsBuy>
-			<li>FungiTrade_Shroomimal</li>
-			<li>AnimalEvilFungus</li>
-			<li>AnimalCommon</li>
-			<li>AnimalUncommon</li>
-			<li>AnimalRare</li>
-			<li>AnimalExotic</li>
-			<li>AnimalInsect</li>
-			<li>AnimalExotic_Anima</li>
-			<li>AnimalFighter</li>
-			<li>AnimalFarm</li>
-			<li>StorytimeAnimal</li>
-			<li>AnimalFrog</li>
+          <li>FungiTrade_Shroomimal</li>
+          <li>AnimalEvilFungus</li>
+          <li>AnimalCommon</li>
+          <li>AnimalUncommon</li>
+          <li>AnimalRare</li>
+          <li>AnimalExotic</li>
+          <li>AnimalInsect</li>
+          <li>AnimalExotic_Anima</li>
+          <li>AnimalFighter</li>
+          <li>AnimalFarm</li>
+          <li>StorytimeAnimal</li>
+          <li>AnimalFrog</li>
         </tradeTagsBuy>
         <kindCountRange>1~3</kindCountRange>
         <countRange>1~14</countRange>
@@ -81,7 +81,7 @@
         <thingDefs>
           <li>Cloth</li>
           <li>Chocolate</li>
-		  <li>RawFungus</li>
+          <li>RawFungus</li>
         </thingDefs>
       </li>
     </stockGenerators>
