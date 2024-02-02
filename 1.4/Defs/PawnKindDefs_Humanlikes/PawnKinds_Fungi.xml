@@ -19,8 +19,10 @@
     <maxGenerationAge>12</maxGenerationAge>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <apparelTags>
       <li>Tribal</li>
+	  <li>Barbarian</li>
     </apparelTags>
     <weaponTags>
       <li>Lance</li>

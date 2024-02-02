@@ -17,6 +17,7 @@
           <chemicalAddictionChance>0.15</chemicalAddictionChance>
           <combatEnhancingDrugsChance>0.75</combatEnhancingDrugsChance>
           <combatEnhancingDrugsCount>1~5</combatEnhancingDrugsCount>
+		  <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
           <weaponTags Inherit="False">
             <li>Lance</li>
             <li>SpearMen</li>

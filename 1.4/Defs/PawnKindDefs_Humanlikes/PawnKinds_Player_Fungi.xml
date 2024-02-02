@@ -19,6 +19,8 @@
     <defaultFactionType>PlayerColony</defaultFactionType>
     <backstoryCategories>
       <li>Tribal</li>
+	  <li>Vatgrown</li>
+	  <li>VatGrown</li>
     </backstoryCategories>
     <chemicalAddictionChance>0.03</chemicalAddictionChance>
     <apparelTags>

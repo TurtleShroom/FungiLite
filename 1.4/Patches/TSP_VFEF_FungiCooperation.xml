@@ -14,6 +14,7 @@
           <defaultFactionType>FungiFaction</defaultFactionType>
           <combatPower>60</combatPower>
           <race Inherit="False">Human</race>
+		  <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
           <!-- May incorporate Fungi as this Xenotype if possible -->
           <xenotypeSet Inherit="False" MayRequire="vanillaracesexpanded.fungoid">
             <xenotypeChances Inherit="False" MayRequire="vanillaracesexpanded.fungoid">
@@ -23,7 +24,7 @@
           <backstoryCategories Inherit="False">
             <li>Vatgrown</li>
             <li>VatGrown</li>
-            <li>Tribal</li>
+            <!-- <li>Tribal</li> -->
             <li MayRequire="zal.folia">DeathkapFactionBackstories</li>
           </backstoryCategories>
           <useFactionXenotypes>false</useFactionXenotypes>
@@ -32,13 +33,18 @@
           <chemicalAddictionChance>0.2</chemicalAddictionChance>
           <invFoodDef>MealFine_Meat</invFoodDef>
           <!--
-					<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-					<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">false</apparelIgnorePollution>
-					-->
+			<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+			<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">false</apparelIgnorePollution>
+		  -->
+		  <apparelTags>
+			<li>Neolithic</li>
+			<li>Tribal</li>
+			<li>EVA</li>
+		  </apparelTags>
           <minGenerationAge>22</minGenerationAge>
           <maxGenerationAge>30</maxGenerationAge>
-          <initialWillRange>2~4</initialWillRange>
-          <initialResistanceRange>8~16</initialResistanceRange>
+          <initialWillRange>1~4</initialWillRange>
+          <initialResistanceRange>3~7</initialResistanceRange>
         </PawnKindDef>
       </value>
     </match>
