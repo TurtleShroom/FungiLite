@@ -46,7 +46,7 @@
 Update of Druidefuzis mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2129406860
 
-[img]https://i.imgur.com/pufA0kM.png[/img]
+[img]https://i.imgur.com/CN9Rs5X.png[/img]
 
 [table]
     [tr]
@@ -98,4 +98,6 @@ If you want to play that race , just pick the scenario : " Oh look! Shroomies! "
 [/list]
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2793907869][img]https://img.shields.io/github/v/release/emipa606/FungiLite?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url]</description>
+  <modIconPath IgnoreIfNoMatchingField="True">ModIcon/FungiLite</modIconPath>
+  <modVersion IgnoreIfNoMatchingField="True">1.4.4</modVersion>
 </ModMetaData>
